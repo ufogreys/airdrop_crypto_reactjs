@@ -1,0 +1,57 @@
+:root {
+  font-size: 10px;
+}
+
+#CryptoAirdropApp h2 {
+  font-size: 4rem;
+}
+
+#CryptoAirdropApp h3 {
+  font-size: 3rem;
+}
+
+#CryptoAirdropApp button, #CryptoAirdropApp a, #CryptoAirdropApp span, #CryptoAirdropApp p {
+  font-size: 1.6rem;
+}
+
+#CryptoAirdropApp * {
+  color: #fff;
+}
+
+#CryptoAirdropApp .section_title_design .design_item {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--design-bg);
+  display: inline-block;
+}
+
+#CryptoAirdropApp #homeComponent {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #230344;
+}
+
+#CryptoAirdropApp #homeComponent .left_box {
+  max-width: 50rem;
+}
+
+@media (max-width: 992px) {
+  #CryptoAirdropApp #homeComponent .left_box {
+    max-width: 100%;
+  }
+}
+
+#CryptoAirdropApp #AboutComponent {
+  background: #140241;
+  min-height: 80vh;
+}
+/*# sourceMappingURL=App.css.map */

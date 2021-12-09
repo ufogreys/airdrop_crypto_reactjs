@@ -1,0 +1,54 @@
+:root{
+    font-size: 10px;
+}
+#CryptoAirdropApp{
+
+    // global styles..............
+    h2{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    button,a,span, p{
+        font-size: 1.6rem;
+    }
+    *{
+        color: #fff;
+    }
+
+    // .........Global Components............
+
+    .section_title_design{
+        .design_item{
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: var(--design-bg);
+            display: inline-block;
+        }
+    }
+
+
+
+
+    // ...........Page Components............
+
+    #homeComponent{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #230344;
+        .left_box{
+            max-width: 50rem;
+            @media (max-width: 992px){
+            max-width: 100%;
+            }
+        }
+    }
+    #AboutComponent{
+        background: #140241;
+        min-height: 80vh;
+    }
+}
