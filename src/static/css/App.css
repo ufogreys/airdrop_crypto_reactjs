@@ -10,11 +10,19 @@
   font-size: 3rem;
 }
 
+#CryptoAirdropApp h4 {
+  font-size: 2rem;
+}
+
 #CryptoAirdropApp button,
 #CryptoAirdropApp a,
 #CryptoAirdropApp span,
 #CryptoAirdropApp p {
   font-size: 1.6rem;
+}
+
+#CryptoAirdropApp p {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 #CryptoAirdropApp * {
@@ -102,5 +110,15 @@
 
 #CryptoAirdropApp #AboutComponent .watch_box_wrapper #watchModalView .modal-body {
   height: 40rem;
+}
+
+#ServicesComponent .services_card {
+  background: transparent !important;
+  border: 1px solid #08b1b1;
+  border-radius: 0px  30px 0px;
+}
+
+#ServicesComponent .services_card .card-body {
+  background: transparent !important;
 }
 /*# sourceMappingURL=App.css.map */

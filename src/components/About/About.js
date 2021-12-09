@@ -87,12 +87,12 @@ function About(props) {
               >
                 <div
                   className="card trusted_card"
-                  style={{ "border-radius": "15px" }}
+                  style={{ "borderRadius": "15px" }}
                 >
                   <div className="card-header">
                     <img
                       className="w-100"
-                      style={{ height: "150px", "object-fit": "contain" }}
+                      style={{ height: "150px", "objectFit": "contain" }}
                       src={v.img}
                       alt="img"
                       className="card-img"

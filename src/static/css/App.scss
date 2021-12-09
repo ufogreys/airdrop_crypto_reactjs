@@ -9,11 +9,17 @@
   h3 {
     font-size: 3rem;
   }
+  h4{
+      font-size: 2rem;
+  }
   button,
   a,
   span,
   p {
     font-size: 1.6rem;
+  }
+  p{
+      color: rgba(255, 255, 255, 0.85);
   }
   * {
     color: #fff;
@@ -47,8 +53,8 @@
       }
     }
   }
-  #AboutAndServices{
-      background: linear-gradient(-33deg, #3f0959, #140241);
+  #AboutAndServices {
+    background: linear-gradient(-33deg, #3f0959, #140241);
   }
   #AboutComponent {
     min-height: 80vh;
@@ -66,21 +72,22 @@
     .watch_box_wrapper {
       width: 100%;
       height: 35rem;
-      background:#fff url("../../assets/images/bg-4.jpg") center/cover no-repeat;
+      background: #fff url("../../assets/images/bg-4.jpg") center/cover
+        no-repeat;
       display: flex;
       justify-content: center;
       align-items: center;
-    //   &::before {
-    //     content: "";
-    //     position: absolute;
-    //     bottom: -2rem;
-    //     right: -2rem;
-    //     border: 2px solid #fff;
-    //     width: 100%;
-    //     height: 100%;
-    //     border-radius: 25px;
-    //     z-index: -3;
-    //   }
+      //   &::before {
+      //     content: "";
+      //     position: absolute;
+      //     bottom: -2rem;
+      //     right: -2rem;
+      //     border: 2px solid #fff;
+      //     width: 100%;
+      //     height: 100%;
+      //     border-radius: 25px;
+      //     z-index: -3;
+      //   }
       button {
         width: 10rem;
         height: 10rem;
@@ -89,6 +96,17 @@
       #watchModalView .modal-body {
         height: 40rem;
       }
+    }
+  }
+}
+
+#ServicesComponent {
+  .services_card {
+    background: transparent!important;
+    border: 1px solid #08b1b1;
+    border-radius: 0px  30px 0px;
+    .card-body {
+      background: transparent!important;
     }
   }
 }

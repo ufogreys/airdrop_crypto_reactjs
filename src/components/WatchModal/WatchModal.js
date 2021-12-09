@@ -7,7 +7,7 @@ function WatchModal(props) {
       id="watchModalView"
       data-backdrop="static"
       data-keyboard="false"
-      tabindex="-1"
+      tabIndex="-1"
       aria-labelledby="staticBackdrop"
       aria-hidden="true"
     >
@@ -18,9 +18,9 @@ function WatchModal(props) {
               className="w-100 h-100"
               src="https://www.youtube.com/embed/zpNlG3VtcBM"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>
