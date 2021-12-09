@@ -1,6 +1,9 @@
 :root {
   font-size: 10px;
 }
+
+// .........Variable.......
+$cyan: #00e4ff;
 #CryptoAirdropApp {
   // global styles..............
   h2 {
@@ -9,8 +12,8 @@
   h3 {
     font-size: 3rem;
   }
-  h4{
-      font-size: 2rem;
+  h4 {
+    font-size: 2rem;
   }
   button,
   a,
@@ -18,8 +21,8 @@
   p {
     font-size: 1.6rem;
   }
-  p{
-      color: rgba(255, 255, 255, 0.85);
+  p {
+    color: rgba(255, 255, 255, 0.85);
   }
   * {
     color: #fff;
@@ -102,11 +105,168 @@
 
 #ServicesComponent {
   .services_card {
-    background: transparent!important;
+    background: transparent !important;
     border: 1px solid #08b1b1;
-    border-radius: 0px  30px 0px;
+    border-radius: 0px 30px 0px;
     .card-body {
-      background: transparent!important;
+      background: transparent !important;
+    }
+  }
+}
+
+#RoadMap {
+  background: #010111 url("../../assets/images/bg-roadmap.png") center / cover
+    no-repeat;
+  min-height: 80vh;
+  #roadMap_line_wrapper {
+    height: 50rem;
+    // border: solid red;
+    position: relative;
+    p {
+      font-size: 1.3rem !important;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      width: 100%;
+      display: block;
+      height: 4px;
+      background: $cyan;
+      box-shadow: 5px 5px 105px $cyan;
+      transform: translateY(-50%);
+    }
+    .top_line_cards {
+      position: absolute;
+      bottom: 50%;
+      // transform: translateY(-50%);
+      left: 2%;
+      width: calc(100% - 4%);
+      // border: solid red;
+      .line_cards {
+        position: absolute;
+        bottom: 0;
+        width: 18rem;
+        min-height: 22rem;
+        .line_duration{
+          position: absolute;
+          bottom: -5.5rem;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 2rem;
+          height: 2rem;
+          bottom: -1.2rem;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 50%;
+          border: 2px solid $cyan;
+          background: #010111;
+          z-index: 22;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 0.8rem;
+          height: 0.8rem;
+          bottom: -0.6rem;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 50%;
+          z-index: 23;
+          background: $cyan;
+        }
+        .line_with_icons {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          $bottom_up_size: 5rem;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            width: 0.1rem;
+            height: $bottom_up_size;
+            background: $cyan;
+            bottom: 0;
+          }
+          .icon_wrapper {
+            width: 5rem;
+            height: 5rem;
+            border: 2px solid $cyan;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: $bottom_up_size;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+          }
+          .line_content_wrapper {
+            position: absolute;
+            width: 100%;
+            bottom: 11rem;
+            text-align: center;
+          }
+        }
+        &:nth-of-type(2) {
+          left: calc(20% + 4%);
+        }
+        &:nth-of-type(3) {
+          left: calc(40% + 4%);
+        }
+        &:nth-of-type(4) {
+          left: calc(60% + 4%);
+        }
+        &:nth-of-type(5) {
+          left: calc(80% + 4%);
+        }
+
+        //
+        .line_article_list {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -4.5rem;
+            width: 50%;
+            height: 0.05rem;
+            background: $cyan;
+            left: -10%;
+            opacity: 0.2;
+          }
+          &::before {
+            width: 0.05rem;
+            height: calc(100% + 4.5rem);
+            background: $cyan;
+            opacity: 0.2;
+            position: absolute;
+            left: -10%;
+            content: "";
+          }
+          li {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: calc(-10% - 0.2rem);
+              width: 0.5rem;
+              height: 0.5rem;
+              border-radius: 50%;
+              background: $cyan;
+            }
+          }
+        }
+      }
     }
   }
 }

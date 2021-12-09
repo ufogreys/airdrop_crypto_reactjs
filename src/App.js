@@ -3,6 +3,7 @@ import Base from "./Layout/Base";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
+import RoadMap from "./components/RoadMap/RoadMap";
 function App() {
   return (
     <div id="CryptoAirdropApp">
@@ -12,6 +13,7 @@ function App() {
           <About></About>
           <Services></Services>
         </div>
+        <RoadMap></RoadMap>
       </Base>
     </div>
   );
