@@ -2,7 +2,7 @@ import React from "react";
 import Airdrop_img from "../../assets/images/airdrop_img.png";
 function Home(props) {
   return (
-    <div id="homeComponent">
+    <section id="homeComponent">
       <div className="container-xxl">
         <div className="row">
           <div className="col-12">
@@ -22,7 +22,7 @@ function Home(props) {
                 </p>
                 <div className="btn_wrapper mt-4">
                     <button className="btn rounded-pill me-3 btn-danger">Learn more</button>
-                    <button className="btn rounded-pill btn-warning">Learn more</button>
+                    <button className="btn rounded-pill btn-info">Contact Us</button>
                 </div>
               </div>
               <div className="right_box order-1 order-lg-2">
@@ -32,7 +32,7 @@ function Home(props) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

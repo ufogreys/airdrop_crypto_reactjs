@@ -10,12 +10,19 @@
   font-size: 3rem;
 }
 
-#CryptoAirdropApp button, #CryptoAirdropApp a, #CryptoAirdropApp span, #CryptoAirdropApp p {
+#CryptoAirdropApp button,
+#CryptoAirdropApp a,
+#CryptoAirdropApp span,
+#CryptoAirdropApp p {
   font-size: 1.6rem;
 }
 
 #CryptoAirdropApp * {
   color: #fff;
+}
+
+#CryptoAirdropApp .section_title_design {
+  display: inline-block;
 }
 
 #CryptoAirdropApp .section_title_design .design_item {
@@ -50,8 +57,50 @@
   }
 }
 
+#CryptoAirdropApp #AboutAndServices {
+  background: linear-gradient(-33deg, #3f0959, #140241);
+}
+
 #CryptoAirdropApp #AboutComponent {
-  background: #140241;
   min-height: 80vh;
+}
+
+#CryptoAirdropApp #AboutComponent .trusted_card {
+  -webkit-box-shadow: 4px 5px 10px rgba(164, 22, 253, 0.884);
+          box-shadow: 4px 5px 10px rgba(164, 22, 253, 0.884);
+}
+
+#CryptoAirdropApp #AboutComponent .left_right_side_row1 .left_box {
+  max-width: 50rem;
+}
+
+#CryptoAirdropApp #AboutComponent .left_right_side_row1 .left_box img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#CryptoAirdropApp #AboutComponent .watch_box_wrapper {
+  width: 100%;
+  height: 35rem;
+  background: #fff url("../../assets/images/bg-4.jpg") center/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#CryptoAirdropApp #AboutComponent .watch_box_wrapper button {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+#CryptoAirdropApp #AboutComponent .watch_box_wrapper #watchModalView .modal-body {
+  height: 40rem;
 }
 /*# sourceMappingURL=App.css.map */
