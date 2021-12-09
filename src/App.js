@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
 import RoadMap from "./components/RoadMap/RoadMap";
+import LeftSideNavbar from "./components/LeftSideNavbar/LeftSideNavbar";
 function App() {
   return (
     <div id="CryptoAirdropApp">
@@ -15,6 +16,9 @@ function App() {
         </div>
         <RoadMap></RoadMap>
       </Base>
+
+      {/* Aside fix item */}
+      <LeftSideNavbar></LeftSideNavbar>
     </div>
   );
 }

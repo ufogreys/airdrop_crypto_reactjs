@@ -304,4 +304,22 @@
   border-radius: 50%;
   background: #00e4ff;
 }
+
+#LeftSideNavbar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #0D003B;
+  z-index: 10;
+  left: 2rem;
+  -webkit-box-shadow: 1px 1px 3px rgba(164, 22, 253, 0.884);
+          box-shadow: 1px 1px 3px rgba(164, 22, 253, 0.884);
+}
+
+#LeftSideNavbar .fab {
+  font-size: 2rem;
+  color: #fff;
+  opacity: .6;
+}
 /*# sourceMappingURL=App.css.map */
