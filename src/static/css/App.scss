@@ -18,7 +18,8 @@ $cyan: #00e4ff;
   button,
   a,
   span,
-  p,input {
+  p,
+  input {
     font-size: 1.6rem;
   }
   p {
@@ -149,7 +150,7 @@ $cyan: #00e4ff;
         bottom: 0;
         width: 18rem;
         min-height: 22rem;
-        .line_duration{
+        .line_duration {
           position: absolute;
           bottom: -5.5rem;
           left: 50%;
@@ -271,37 +272,36 @@ $cyan: #00e4ff;
   }
 }
 
-
-#LeftSideNavbar{
+#LeftSideNavbar {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  background: #0D003B;
+  background: #0d003b;
   z-index: 10;
   left: 2rem;
-  box-shadow:1px 1px 3px rgba(164, 22, 253, 0.884);
-  .fab{
+  box-shadow: 1px 1px 3px rgba(164, 22, 253, 0.884);
+  .fab {
     font-size: 2rem;
     color: #fff;
-    opacity: .6;
+    opacity: 0.6;
   }
 }
 
-
-#ico_and_faq{
+#ico_and_faq {
   background: #170446;
 }
-#ICO_update{
-  .ico_wrapper{
-    background: #1D66F6;
+#ICO_update {
+  .ico_wrapper {
+    background: #1d66f6;
     position: relative;
     z-index: 2;
-    &::after{
-      content: '';
-      background: url('../../assets/images/wave-shap.png') center/cover no-repeat;
+    &::after {
+      content: "";
+      background: url("../../assets/images/wave-shap.png") center/cover
+        no-repeat;
       width: 100%;
       height: 100%;
-      opacity: .5;
+      opacity: 0.5;
       position: absolute;
       top: 0;
       left: 0;
@@ -309,35 +309,53 @@ $cyan: #00e4ff;
       user-select: none;
       z-index: -1;
     }
-    .input_custom_group{
+    .input_custom_group {
       max-width: 40rem;
       margin: auto;
-      input{
+      input {
         background: transparent;
         padding: 1.5rem;
         color: #fff;
-        border: none!important;
-        outline: none!important;
-        box-shadow: none!important;
-        border-bottom: 1px solid white!important;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        border-bottom: 1px solid white !important;
         border-radius: 0px;
-        &::placeholder{
+        &::placeholder {
           color: #fff;
         }
       }
-      button{
-        padding-top: .2rem;
-        padding-bottom: .2rem;
+      button {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
       }
     }
   }
 }
 
-#frequently_ask_question{
-  .accordion *{
+#frequently_ask_question {
+  .accordion * {
     background: transparent;
   }
-  .accordion-header{
+  .accordion-header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  #TokenSaleEnd {
+    background: linear-gradient(to right, #21d397 0%, #7450fe 100%);
+    .sale_duration_wrapper {
+      .sale_item {
+        text-align: center;
+        span:nth-child(1) {
+          width: 7rem;
+          height: 7rem;
+          background: #190345;
+          font-size: 2.5rem;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
   }
 }

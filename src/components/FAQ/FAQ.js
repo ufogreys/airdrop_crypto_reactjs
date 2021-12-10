@@ -48,6 +48,11 @@ function FAQ(props) {
 
             <FaqAccordion></FaqAccordion>
           </div>
+          <div className="col-md-6 col-lg-5">
+            <div className="py-3">
+            <TokenSaleEnd></TokenSaleEnd>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -198,6 +203,32 @@ function FaqAccordion() {
               accusamus labore sustainable VHS.
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TokenSaleEnd() {
+  return (
+    <div id="TokenSaleEnd" className="p-3 p-md-5">
+      <h3 className="text-center mb-3 mb-md-5">Token Sale Ends In</h3>
+      <div className="sale_duration_wrapper d-flex justify-content-between">
+        <div className="sale_item">
+          <span className="d-flex">10</span>
+          <span className="d-block">days</span>
+        </div>
+        <div className="sale_item">
+          <span className="d-flex">10</span>
+          <span className="d-block">hours</span>
+        </div>
+        <div className="sale_item">
+          <span className="d-flex">10</span>
+          <span className="d-block">minutes</span>
+        </div>
+        <div className="sale_item">
+          <span className="d-flex">10</span>
+          <span className="d-block">seconds</span>
         </div>
       </div>
     </div>

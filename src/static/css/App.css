@@ -17,7 +17,8 @@
 #CryptoAirdropApp button,
 #CryptoAirdropApp a,
 #CryptoAirdropApp span,
-#CryptoAirdropApp p, #CryptoAirdropApp input {
+#CryptoAirdropApp p,
+#CryptoAirdropApp input {
   font-size: 1.6rem;
 }
 
@@ -310,7 +311,7 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: #0D003B;
+  background: #0d003b;
   z-index: 10;
   left: 2rem;
   -webkit-box-shadow: 1px 1px 3px rgba(164, 22, 253, 0.884);
@@ -320,7 +321,7 @@
 #LeftSideNavbar .fab {
   font-size: 2rem;
   color: #fff;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 #ico_and_faq {
@@ -328,17 +329,17 @@
 }
 
 #ICO_update .ico_wrapper {
-  background: #1D66F6;
+  background: #1d66f6;
   position: relative;
   z-index: 2;
 }
 
 #ICO_update .ico_wrapper::after {
-  content: '';
+  content: "";
   background: url("../../assets/images/wave-shap.png") center/cover no-repeat;
   width: 100%;
   height: 100%;
-  opacity: .5;
+  opacity: 0.5;
   position: absolute;
   top: 0;
   left: 0;
@@ -384,8 +385,8 @@
 }
 
 #ICO_update .ico_wrapper .input_custom_group button {
-  padding-top: .2rem;
-  padding-bottom: .2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 #frequently_ask_question .accordion * {
@@ -394,5 +395,31 @@
 
 #frequently_ask_question .accordion-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#frequently_ask_question #TokenSaleEnd {
+  background: -webkit-gradient(linear, left top, right top, from(#21d397), to(#7450fe));
+  background: linear-gradient(to right, #21d397 0%, #7450fe 100%);
+}
+
+#frequently_ask_question #TokenSaleEnd .sale_duration_wrapper .sale_item {
+  text-align: center;
+}
+
+#frequently_ask_question #TokenSaleEnd .sale_duration_wrapper .sale_item span:nth-child(1) {
+  width: 7rem;
+  height: 7rem;
+  background: #190345;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=App.css.map */
