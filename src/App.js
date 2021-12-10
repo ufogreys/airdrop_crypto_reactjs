@@ -8,6 +8,7 @@ import LeftSideNavbar from "./components/LeftSideNavbar/LeftSideNavbar";
 import ICO_update from "./components/ICO_update/ICO_update";
 import FAQ from "./components/FAQ/FAQ";
 import ICO_distribution from "./components/ICO_distribution/ICO_distribution";
+import ContactUs from "./components/ContactUs/ContactUs";
 function App() {
   return (
     <div id="CryptoAirdropApp">
@@ -22,6 +23,7 @@ function App() {
           <ICO_update></ICO_update>
           <FAQ></FAQ>
           <ICO_distribution></ICO_distribution>
+          <ContactUs></ContactUs>
         </div>
       </Base>
 

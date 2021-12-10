@@ -177,15 +177,15 @@ function FaqAccordion() {
             className="accordion-button collapsed"
             type="button"
             data-mdb-toggle="collapse"
-            data-mdb-target="#flush-collapseThree"
+            data-mdb-target="#flush-collapseFour"
             aria-expanded="false"
-            aria-controls="flush-collapseThree"
+            aria-controls="flush-collapseFour"
           >
             how may I take part in pre-sale?
           </button>
         </h2>
         <div
-          id="flush-collapseThree"
+          id="flush-collapseFour"
           className="accordion-collapse collapse"
           aria-labelledby="flush-headingFour"
           data-mdb-parent="#accordionFlushExample"
@@ -248,7 +248,7 @@ function TokenSaleEnd() {
     }
   };
   // To calculate the time difference of two dates
-  let Difference_In_Time =  new Date(totalTime) - new Date();
+  let Difference_In_Time = new Date(totalTime) - new Date();
 
   // To calculate the no. of days between two dates
   let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
@@ -262,7 +262,7 @@ function TokenSaleEnd() {
     }
   };
   return (
-    <div id="TokenSaleEnd" className="p-3 p-md-5">
+    <div id="TokenSaleEnd" className="p-3 p-md-5 rounded-5">
       <h3 className="text-center mb-3 mb-md-5">Token Sale Ends In</h3>
       <div className="sale_duration_wrapper d-flex justify-content-between">
         <div className="sale_item">
@@ -290,6 +290,10 @@ function TokenSaleEnd() {
           </span>
           <span className="d-block">seconds</span>
         </div>
+      </div>
+
+      <div className="btn_control text-center py-3 pt-md-5">
+        <button className="btn btn-light text-success rounded-pill">Buy More Tokens</button>
       </div>
     </div>
   );

@@ -19,7 +19,8 @@ $cyan: #00e4ff;
   a,
   span,
   p,
-  input {
+  input,
+  textarea {
     font-size: 1.6rem;
   }
   p {
@@ -28,7 +29,10 @@ $cyan: #00e4ff;
   * {
     color: #fff;
   }
-
+nav.navbar{
+  background: #230344!important;
+  border-bottom: 2px solid rgba(115, 80, 254, 0.4);
+}
   // .........Global Components............
 
   .section_title_design {
@@ -357,5 +361,51 @@ $cyan: #00e4ff;
         }
       }
     }
+  }
+}
+#ICO_distribution {
+  .more_token_list {
+    li {
+      border: 1px solid #25cbd3;
+    }
+  }
+}
+
+#ContactUs {
+  background: url('../../assets/images/pattern.png') no-repeat center/cover;
+  #ContactSendingForm {
+    .input_box_wrapper * {
+      background: transparent;
+    }
+    input,
+    textarea {
+      border: none;
+      border-radius: 0px;
+      border-bottom: 1px solid rgba(37, 202, 211, 0.3);
+      outline: none;
+      box-shadow: none;
+      padding: 2rem;
+      color: #fff;
+      &:focus {
+        border-bottom: 1px solid #25cbd3;
+      }
+      &::placeholder {
+        color: #fff;
+      }
+    }
+    textarea {
+      height: 15rem;
+    }
+  }
+}
+
+
+#Footer{
+  background: #192057;
+  p,span{
+    font-size: 1.3rem;
+  }
+  .anchor_color{
+    color: rgba(255, 255, 255, 0.7);
   }
 }

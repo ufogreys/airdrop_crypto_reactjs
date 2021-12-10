@@ -18,7 +18,8 @@
 #CryptoAirdropApp a,
 #CryptoAirdropApp span,
 #CryptoAirdropApp p,
-#CryptoAirdropApp input {
+#CryptoAirdropApp input,
+#CryptoAirdropApp textarea {
   font-size: 1.6rem;
 }
 
@@ -28,6 +29,11 @@
 
 #CryptoAirdropApp * {
   color: #fff;
+}
+
+#CryptoAirdropApp nav.navbar {
+  background: #230344 !important;
+  border-bottom: 2px solid rgba(115, 80, 254, 0.4);
 }
 
 #CryptoAirdropApp .section_title_design {
@@ -421,5 +427,70 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#ICO_distribution .more_token_list li {
+  border: 1px solid #25cbd3;
+}
+
+#ContactUs {
+  background: url("../../assets/images/pattern.png") no-repeat center/cover;
+}
+
+#ContactUs #ContactSendingForm .input_box_wrapper * {
+  background: transparent;
+}
+
+#ContactUs #ContactSendingForm input,
+#ContactUs #ContactSendingForm textarea {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid rgba(37, 202, 211, 0.3);
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 2rem;
+  color: #fff;
+}
+
+#ContactUs #ContactSendingForm input:focus,
+#ContactUs #ContactSendingForm textarea:focus {
+  border-bottom: 1px solid #25cbd3;
+}
+
+#ContactUs #ContactSendingForm input::-webkit-input-placeholder,
+#ContactUs #ContactSendingForm textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#ContactUs #ContactSendingForm input:-ms-input-placeholder,
+#ContactUs #ContactSendingForm textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+#ContactUs #ContactSendingForm input::-ms-input-placeholder,
+#ContactUs #ContactSendingForm textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+#ContactUs #ContactSendingForm input::placeholder,
+#ContactUs #ContactSendingForm textarea::placeholder {
+  color: #fff;
+}
+
+#ContactUs #ContactSendingForm textarea {
+  height: 15rem;
+}
+
+#Footer {
+  background: #192057;
+}
+
+#Footer p, #Footer span {
+  font-size: 1.3rem;
+}
+
+#Footer .anchor_color {
+  color: rgba(255, 255, 255, 0.7);
 }
 /*# sourceMappingURL=App.css.map */
