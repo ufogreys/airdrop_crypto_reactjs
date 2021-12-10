@@ -37,7 +37,7 @@ function ICO_distribution(props) {
                   className="design_item"
                 ></span>
               </div>
-              <h3 className="py-3">ICO_distribution</h3>
+              <h3 className="py-3">ICO distribution</h3>
               <p className="w-75 mx-auto">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
                 neque qui voluptates, aperiam consequuntur iste necessitatibus
