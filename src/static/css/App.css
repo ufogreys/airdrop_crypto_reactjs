@@ -31,9 +31,28 @@
   color: #fff;
 }
 
-#CryptoAirdropApp nav.navbar {
+#CryptoAirdropApp #nav.navbar {
   background: #230344 !important;
   border-bottom: 2px solid rgba(115, 80, 254, 0.4);
+}
+
+#CryptoAirdropApp #nav.navbar a, #CryptoAirdropApp #nav.navbar button {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 992px) {
+  #CryptoAirdropApp #nav.navbar .mobile_design_navbar {
+    position: absolute;
+    display: block !important;
+    width: 100%;
+    left: 0px;
+    background: #192057;
+    text-align: center;
+    padding: 3rem;
+  }
+  #CryptoAirdropApp #nav.navbar .mobile_design_navbar a {
+    display: block;
+  }
 }
 
 #CryptoAirdropApp .section_title_design {

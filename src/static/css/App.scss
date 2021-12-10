@@ -29,9 +29,26 @@ $cyan: #00e4ff;
   * {
     color: #fff;
   }
-nav.navbar{
+#nav.navbar{
   background: #230344!important;
   border-bottom: 2px solid rgba(115, 80, 254, 0.4);
+  a,button{
+    font-size: 1.3rem;
+  }
+  @media (max-width: 992px){
+    .mobile_design_navbar{
+      position: absolute;
+      display: block!important;
+      width: 100%;
+      left: 0px;
+      background: #192057;
+      text-align: center;
+      padding: 3rem;
+      a{
+        display: block;
+      }
+    }
+  }
 }
   // .........Global Components............
 

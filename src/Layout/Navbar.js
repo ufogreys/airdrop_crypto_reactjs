@@ -10,7 +10,7 @@ function Navbar(props) {
         {
             id: 2,
             name: 'Roadmap',
-            link: '#'
+            link: '#RoadMap'
         },
         {
             id: 3,
@@ -20,7 +20,7 @@ function Navbar(props) {
         {
             id: 4,
             name: 'Contact',
-            link: '#'
+            link: '#ContactUs'
         },
         {
             id: 5,
@@ -40,7 +40,7 @@ function Navbar(props) {
 
     ]
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
             {/* <!-- Container wrapper --> */}
             <div className="container">
                 {/* <!-- Navbar brand --> */}
@@ -64,7 +64,7 @@ function Navbar(props) {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <i className="fas fa-bars"></i>
+                    <i className="fas fa-bars fa-2x"></i>
                 </button>
 
                 {/* <!-- Collapsible wrapper --> */}
@@ -74,12 +74,12 @@ function Navbar(props) {
                     </ul>
                     {/* <!-- Left links --> */}
 
-                    <div className="d-flex align-items-center">
+                    <div className="d-flex align-items-center mobile_design_navbar">
                         {navLinks.map(v=> {
                             return <a href={v.link} key={v.id} className="btn btn-muted me-1 shadow-0 text-white"> {v.name} </a>
                         })}
-                        <button type="button" className="btn btn-primary px-3">
-                            Login
+                        <button type="button" className="btn btn-outline-secondary px-5 mt-3 mt-lg-0 rounded-pill">
+                            Log in
                         </button>
                     </div>
                 </div>
