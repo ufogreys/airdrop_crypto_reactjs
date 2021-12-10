@@ -18,7 +18,7 @@ $cyan: #00e4ff;
   button,
   a,
   span,
-  p {
+  p,input {
     font-size: 1.6rem;
   }
   p {
@@ -284,5 +284,60 @@ $cyan: #00e4ff;
     font-size: 2rem;
     color: #fff;
     opacity: .6;
+  }
+}
+
+
+#ico_and_faq{
+  background: #170446;
+}
+#ICO_update{
+  .ico_wrapper{
+    background: #1D66F6;
+    position: relative;
+    z-index: 2;
+    &::after{
+      content: '';
+      background: url('../../assets/images/wave-shap.png') center/cover no-repeat;
+      width: 100%;
+      height: 100%;
+      opacity: .5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      user-select: none;
+      z-index: -1;
+    }
+    .input_custom_group{
+      max-width: 40rem;
+      margin: auto;
+      input{
+        background: transparent;
+        padding: 1.5rem;
+        color: #fff;
+        border: none!important;
+        outline: none!important;
+        box-shadow: none!important;
+        border-bottom: 1px solid white!important;
+        border-radius: 0px;
+        &::placeholder{
+          color: #fff;
+        }
+      }
+      button{
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+      }
+    }
+  }
+}
+
+#frequently_ask_question{
+  .accordion *{
+    background: transparent;
+  }
+  .accordion-header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
