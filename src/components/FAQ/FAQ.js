@@ -1,5 +1,6 @@
 import React from "react";
-
+import ReactDOM from "react-dom";
+import Countdown from "react-countdown";
 function FAQ(props) {
   return (
     <div id="frequently_ask_question" className="pb-5">
@@ -50,7 +51,7 @@ function FAQ(props) {
           </div>
           <div className="col-md-6 col-lg-5">
             <div className="py-3">
-            <TokenSaleEnd></TokenSaleEnd>
+              <TokenSaleEnd></TokenSaleEnd>
             </div>
           </div>
         </div>
@@ -210,24 +211,83 @@ function FaqAccordion() {
 }
 
 function TokenSaleEnd() {
+  // default date
+  const totalTime = "December 21, 2023 01:15:00:526"; // add your total date here
+  const defaultDate = Date.parse(totalTime);
+  console.log(defaultDate);
+  // Random component
+  const Completionist = () => <b>0</b>;
+
+  // Renderer callback with condition
+  const seconds = ({ hours, minutes, seconds, completed }) => {
+    if (completed) {
+      // Render a completed state
+      return <Completionist />;
+    } else {
+      // Render a countdown
+      return <b>{seconds}</b>;
+    }
+  };
+  const minutes = ({ hours, minutes, seconds, completed }) => {
+    if (completed) {
+      // Render a completed state
+      return <Completionist />;
+    } else {
+      // Render a countdown
+      return <b>{minutes}</b>;
+    }
+  };
+
+  const hours = ({ hours, minutes, seconds, completed }) => {
+    if (completed) {
+      // Render a completed state
+      return <Completionist />;
+    } else {
+      // Render a countdown
+      return <b>{hours}</b>;
+    }
+  };
+  // To calculate the time difference of two dates
+  let Difference_In_Time =  new Date(totalTime) - new Date();
+
+  // To calculate the no. of days between two dates
+  let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+  const days = ({ days, hours, minutes, seconds, completed }) => {
+    if (completed) {
+      // Render a completed state
+      return <Completionist />;
+    } else {
+      // Render a countdown
+      return ~~Difference_In_Days;
+    }
+  };
   return (
     <div id="TokenSaleEnd" className="p-3 p-md-5">
       <h3 className="text-center mb-3 mb-md-5">Token Sale Ends In</h3>
       <div className="sale_duration_wrapper d-flex justify-content-between">
         <div className="sale_item">
-          <span className="d-flex">10</span>
+          <span className="d-flex">
+            <Countdown date={Date.now() + defaultDate} renderer={days} />
+          </span>
           <span className="d-block">days</span>
         </div>
         <div className="sale_item">
-          <span className="d-flex">10</span>
+          <span className="d-flex">
+            <Countdown date={Date.now() + defaultDate} renderer={hours} />
+          </span>
           <span className="d-block">hours</span>
         </div>
         <div className="sale_item">
-          <span className="d-flex">10</span>
+          <span className="d-flex">
+            {" "}
+            <Countdown date={Date.now() + defaultDate} renderer={minutes} />
+          </span>
           <span className="d-block">minutes</span>
         </div>
         <div className="sale_item">
-          <span className="d-flex">10</span>
+          <span className="d-flex">
+            <Countdown date={Date.now() + defaultDate} renderer={seconds} />
+          </span>
           <span className="d-block">seconds</span>
         </div>
       </div>
