@@ -1,8 +1,8 @@
 import React from "react";
 
-function ICO_update(props) {
+function IcoUpdate(props) {
   return (
-    <div id="ICO_update" className="py-5">
+    <div id="IcoUpdate" className="py-5">
       <div className="container-xxl py-5">
         <div className="row justify-content-center">
           <div className="col-11 col-md-9">
@@ -10,10 +10,12 @@ function ICO_update(props) {
               <div className="ico_content ">
                 <h2 className="mb-3">Don’t Miss ICO News And Updates!</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquam, placeat perspiciatis temporibus deleniti ad at
-                  eligendi earum, culpa quidem voluptate alias odit commodi
-                  veritatis eveniet.
+                  Dream Coin most exciting feature is that it’s the first
+                  created Independent “LPMAX” (liquidity pool) and it put the
+                  true power in each holders hands. It minimizes and frustrates
+                  rug pulls, price manipulations and pump/dumps schemes. Our
+                  Smart Chain Contract promotes actual assurance and insurance
+                  for the growth for our holders.
                 </p>
               </div>
               <form action="" method="post">
@@ -44,4 +46,4 @@ function ICO_update(props) {
   );
 }
 
-export default ICO_update;
+export default IcoUpdate;

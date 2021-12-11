@@ -15,7 +15,7 @@ function Navbar(props) {
         {
             id: 3,
             name: 'Whitepaper',
-            link: '#'
+            link: '#ServicesComponent'
         },
         {
             id: 4,
@@ -25,12 +25,12 @@ function Navbar(props) {
         {
             id: 5,
             name: 'Reward BNB',
-            link: '#'
+            link: '#IcoUpdate'
         },
         {
             id: 6,
             name: 'Presale',
-            link: '#'
+            link: '#AboutComponent'
         },
         {
             id: 7,
@@ -50,7 +50,7 @@ function Navbar(props) {
                         height="50"
                         alt=""
                         loading="lazy"
-                       
+
                     />
                 </a>
 
@@ -75,11 +75,11 @@ function Navbar(props) {
                     {/* <!-- Left links --> */}
 
                     <div className="d-flex align-items-center mobile_design_navbar">
-                        {navLinks.map(v=> {
-                            return <a href={v.link} key={v.id} className="btn btn-muted me-1 shadow-0 text-white"> {v.name} </a>
+                        {navLinks.map(v => {
+                            return <a data-aos-once="true" data-aos="fade-right" data-aos-delay={v.id * 50} data-aos-offset="0" href={v.link} key={v.id} className="btn btn-muted me-1 shadow-0 text-white"> {v.name} </a>
                         })}
-                        <button type="button" className="btn btn-outline-secondary px-5 mt-3 mt-lg-0 rounded-pill">
-                            Log in
+                        <button type="button" data-aos-once="true" data-aos="fade-left" data-aos-delay="350" className="btn btn-outline-secondary px-5 mt-3 mt-lg-0 rounded-pill">
+                            Connect
                         </button>
                     </div>
                 </div>

@@ -40,10 +40,8 @@ function ContactUs(props) {
               <div className="text-center">
                 <h3 className="py-3">Contact With Us</h3>
                 <p className="w-75 mx-auto">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  neque qui voluptates, aperiam consequuntur iste necessitatibus
-                  id fugiat, numquam deleniti rerum illum cumque voluptatibus
-                  dolore!
+                  We distribute the 8% transaction fees to holders, so every
+                  holder can take benefit from this redistribution.
                 </p>
               </div>
             </div>
@@ -86,7 +84,9 @@ function ContactSendingForm() {
         </div>
 
         <div className="btn_action py-5 text-center">
-          <button className="btn btn-secondary px-5 rounded-pill">Send message</button>
+          <button className="btn btn-secondary px-5 rounded-pill">
+            Send message
+          </button>
         </div>
       </form>
     </div>

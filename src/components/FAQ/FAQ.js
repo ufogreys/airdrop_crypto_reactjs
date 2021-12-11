@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Countdown from "react-countdown";
+import DesignSectionDot from "../DesignSectionDot/DesignSectionDot";
 function FAQ(props) {
   return (
     <div id="frequently_ask_question" className="pb-5">
@@ -8,42 +9,16 @@ function FAQ(props) {
         <div className="row">
           <div className="col-md-6 col-lg-7">
             <div className=" py-3 ">
-              <div className="section_title_design">
-                <span
-                  style={{ "--design-bg": "#00A8FF" }}
-                  className="design_item me-2"
-                ></span>
-                <span
-                  style={{ "--design-bg": "#9C88FF" }}
-                  className="design_item me-2"
-                ></span>
-                <span
-                  style={{ "--design-bg": "#FBC531" }}
-                  className="design_item  me-2"
-                ></span>
-                <span
-                  style={{ "--design-bg": "#4CD137" }}
-                  className="design_item  me-2"
-                ></span>
-                <span
-                  style={{ "--design-bg": "#487EB0" }}
-                  className="design_item  me-2"
-                ></span>
-                <span
-                  style={{ "--design-bg": "#E84118" }}
-                  className="design_item  me-2"
-                ></span>
-                <span
-                  style={{ "--design-bg": "#8C7AE6" }}
-                  className="design_item"
-                ></span>
-              </div>
+              <DesignSectionDot></DesignSectionDot>
               <h3 className="py-3">Frequently Asked Questions</h3>
               <p className="w-75">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                neque qui voluptates, aperiam consequuntur iste necessitatibus
-                id fugiat, numquam deleniti rerum illum cumque voluptatibus
-                dolore!
+                Dream Coin is a charitable based token. Dream coin holders makes
+                suggestions and vote on all charitable donations. Donations will
+                go to hospitals, children, homeless and animal organizations, as
+                chosen and approved by community majority vote. Also annually,
+                ongoing Dream Community will create a scholarship fund for
+                donation and randomly select an outstanding student heading to
+                college.
               </p>
             </div>
 
@@ -75,7 +50,7 @@ function FaqAccordion() {
             aria-expanded="false"
             aria-controls="flush-collapseOne"
           >
-            What are the objectives of this token?
+            Dream Protocol WhitePaper
           </button>
         </h2>
         <div
@@ -86,16 +61,10 @@ function FaqAccordion() {
         >
           <div className="accordion-body">
             <p className="p-3">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-              on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-              lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
+              Static Rewards, LP Acquisition, Autobuyback and Burn Dream coin
+              implemented the autobuyback and burn feature. This happens
+              automatically when there is selling. With this, we were ensuring
+              that our LPMAX was safe during buy/sells transactions .
             </p>
           </div>
         </div>
@@ -110,7 +79,7 @@ function FaqAccordion() {
             aria-expanded="false"
             aria-controls="flush-collapseTwo"
           >
-            What is Token Sale and pre-sale?
+            THE PURPOSE OF THE “LPMAX” (Liquidity Pool).
           </button>
         </h2>
         <div
@@ -121,16 +90,12 @@ function FaqAccordion() {
         >
           <div className="accordion-body">
             <p className="p-3">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-              on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-              lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
+              Many of us avid crypto currency investors may have been subjected
+              to many types of unfortunate events, such as, scams, rug pulls,
+              honey pots, pump/dumps, etc.. that may have caused an unfair loss.
+              Therefore, being around a while and even experiencing a few of
+              those terrible circumstances, we concluded that we needed a
+              solution and more “Developer Transparency & Accountability”.
             </p>
           </div>
         </div>
@@ -145,7 +110,7 @@ function FaqAccordion() {
             aria-expanded="false"
             aria-controls="flush-collapseThree"
           >
-            What is the pre-sale start date?
+            So Our Team Created Dream Coin and The LPMAX (Liquidity Pool)
           </button>
         </h2>
         <div
@@ -156,16 +121,24 @@ function FaqAccordion() {
         >
           <div className="accordion-body">
             <p className="p-3">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-              on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-              lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
+              The most important elements that we decided were necessary were
+              investment safeguards. With This Launch And To Ensure The Safety
+              Of Our LPMax We’re Incorporating A Tax Scale To Benefit Investors
+              - As Follows: The First 30 Days/50% Tax; After 60 Days 30% Tax;
+              and lastly, After 90 Days A 15% Tax. This Will Be The Reduction
+              Tax Scale To Ensure No Pump And Dumps. We believe this assures a
+              healthy stable and steady growth of Dream Coin’s Token Value.
+              Additionally, we also believe that it was necessary to reward long
+              term investors (holders) with 8% redistribution from all sells.
+              This made economical sense to us because it promotes growth and
+              prospering benefits to everyone. Lastly, to demonstrate a
+              promising token value to holders of Dream Coin. We implemented the
+              BuyBack/AutoBurn of Dream Coin Tokens . Out of A Supply of 120
+              Million Dream Coins Were Set To Burn A Maximum Up to 50% of Its
+              Supply, Resulting In A Maximum of 60 Million Dream Coin. It is our
+              hope to minimize market crashes, frustrate scamming techniques and
+              to help improve crypto investing “Hopes” To Make Everyone “Dreams
+              Come True.”
             </p>
           </div>
         </div>
@@ -181,7 +154,7 @@ function FaqAccordion() {
             aria-expanded="false"
             aria-controls="flush-collapseFour"
           >
-            how may I take part in pre-sale?
+            Why Static?
           </button>
         </h2>
         <div
@@ -192,16 +165,14 @@ function FaqAccordion() {
         >
           <div className="accordion-body">
             <p className="p-3">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life
-              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
-              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-              on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-              lomo. Leggings occaecat craft beer farm-to-table, raw denim
-              aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
+              Static rewards solve a host of problems. First, the reward amount
+              is conditional upon the volume of the token being traded. This
+              mechanism aims to alleviate some of the downward sell pressure put
+              on the token caused by earlier adopters selling their tokens after
+              farming crazy high APY’s. Second, the reflect mechanism encourages
+              holders to hang onto their tokens to garner higher kick-backs
+              which are based upon a percentages carried out and dependant upon
+              the total tokens held by the owner.
             </p>
           </div>
         </div>
@@ -293,7 +264,9 @@ function TokenSaleEnd() {
       </div>
 
       <div className="btn_control text-center py-3 pt-md-5">
-        <button className="btn btn-light text-success rounded-pill">Buy More Tokens</button>
+        <button className="btn btn-light text-success rounded-pill">
+          Buy More Tokens
+        </button>
       </div>
     </div>
   );

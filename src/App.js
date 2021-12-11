@@ -5,13 +5,22 @@ import About from "./components/About/About";
 import Services from "./components/Services/Services";
 import RoadMap from "./components/RoadMap/RoadMap";
 import LeftSideNavbar from "./components/LeftSideNavbar/LeftSideNavbar";
-import ICO_update from "./components/ICO_update/ICO_update";
+import IcoUpdate from "./components/IcoUpdate/IcoUpdate";
 import FAQ from "./components/FAQ/FAQ";
-import ICO_distribution from "./components/ICO_distribution/ICO_distribution";
+import IcoDistribution from "./components/IcoDistribution/IcoDistribution";
 import ContactUs from "./components/ContactUs/ContactUs";
+import AnimatedCursor from "react-animated-cursor"
 function App() {
   return (
     <div id="CryptoAirdropApp">
+      {/* cursor animatation */}
+      <AnimatedCursor  innerSize={12}
+      outerSize={20}
+      color='193, 11, 111'
+      outerAlpha={0.2}
+      innerScale={0.7}
+      outerScale={5}
+      trailingSpeed={15}></AnimatedCursor>
       <Base>
         <Home></Home>
         <div id="AboutAndServices">
@@ -20,9 +29,9 @@ function App() {
         </div>
         <RoadMap></RoadMap>
         <div id="ico_and_faq">
-          <ICO_update></ICO_update>
+          <IcoUpdate></IcoUpdate>
           <FAQ></FAQ>
-          <ICO_distribution></ICO_distribution>
+          <IcoDistribution></IcoDistribution>
           <ContactUs></ContactUs>
         </div>
       </Base>

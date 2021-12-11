@@ -12,36 +12,38 @@ function Footer(props) {
                 <img src={Logo} height="50" alt="" loading="lazy" />
               </a>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-                quidem quaerat aliquid tempora minus, molestiae libero
-                exercitationem, facilis veritatis vero enim facere voluptas,
-                similique possimus labore dolores fuga? Quod in doloribus maxime
-                recusandae minus perspiciatis.
+                Dream Coin is a charitable based token. Dream coin holders makes
+                suggestions and vote on all charitable donations. Donations will
+                go to hospitals, children, homeless and animal organizations, as
+                chosen and approved by community majority vote. Also annually,
+                ongoing Dream Community will create a scholarship fund for
+                donation and randomly select an outstanding student heading to
+                college.
               </p>
               <ul className="list-unstyled d-flex">
                 <li className="p-2">
                   <a href="#">
-                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                    <i className="fab fa-facebook" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li className="p-2">
                   <a href="#">
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <i className="fab fa-twitter" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li className="p-2">
                   <a href="#">
-                    <i class="fab fa-google-plus" aria-hidden="true"></i>
+                    <i className="fab fa-google-plus" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li className="p-2">
                   <a href="#">
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <i className="fab fa-instagram" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li className="p-2">
                   <a href="#">
-                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    <i className="fab fa-linkedin" aria-hidden="true"></i>
                   </a>
                 </li>
               </ul>

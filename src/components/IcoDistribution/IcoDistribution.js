@@ -1,48 +1,20 @@
 import React from "react";
+import DesignSectionDot from "../DesignSectionDot/DesignSectionDot";
 
-function ICO_distribution(props) {
+function IcoDistribution(props) {
   return (
-    <div id="ICO_distribution">
+    <div id="IcoDistribution">
       <div className="container-xxl">
         <div className="row justify-content-center">
           <div className="col-11 col-md-9">
             <div className=" py-3 text-center">
-              <div className="section_title_design">
-                <span
-                  style={{ "--design-bg": "#00A8FF" }}
-                  className="design_item me-2"
-                ></span>
-                <span
-                  style={{ "--design-bg": "#9C88FF" }}
-                  className="design_item me-2"
-                ></span>
-                <span
-                  style={{ "--design-bg": "#FBC531" }}
-                  className="design_item  me-2"
-                ></span>
-                <span
-                  style={{ "--design-bg": "#4CD137" }}
-                  className="design_item  me-2"
-                ></span>
-                <span
-                  style={{ "--design-bg": "#487EB0" }}
-                  className="design_item  me-2"
-                ></span>
-                <span
-                  style={{ "--design-bg": "#E84118" }}
-                  className="design_item  me-2"
-                ></span>
-                <span
-                  style={{ "--design-bg": "#8C7AE6" }}
-                  className="design_item"
-                ></span>
-              </div>
-              <h3 className="py-3">ICO distribution</h3>
+              <DesignSectionDot></DesignSectionDot>
+              <h3 className="py-3">Presale</h3>
               <p className="w-75 mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                neque qui voluptates, aperiam consequuntur iste necessitatibus
-                id fugiat, numquam deleniti rerum illum cumque voluptatibus
-                dolore!
+                All of this is an effort to alleviate some of the troubles we
+                have seen with the current DeFi reflection tokens. We are
+                confident that this model and protocol will prevail over the
+                outdated reflection tokens for these reasons
               </p>
             </div>
           </div>
@@ -140,4 +112,4 @@ function ICO_distribution(props) {
   );
 }
 
-export default ICO_distribution;
+export default IcoDistribution;

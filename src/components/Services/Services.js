@@ -1,52 +1,52 @@
 import React from "react";
-
+import DesignSectionDot from "../DesignSectionDot/DesignSectionDot";
 function Services(props) {
   const service_card_obj = [
     {
       id: 1,
-      title: "Smart Trading Modules",
+      title: "Dream Protocol WhitePaper",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, cupiditate necessitatibus corrupti tempora consequuntur nam? Unde officia et, tempore enim dolores voluptatem quos similique ducimus.",
+        "Static Rewards, LP Acquisition, Autobuyback and Burn Dream coin implemented the autobuyback and burn feature. This happens automatically when there is selling. With this, we were ensuring that our LPMAX was safe during buy/sells transactions.",
       link: "#",
       img: require("../../assets/images/setting.svg").default,
     },
     {
       id: 2,
-      title: "Adaptive Social Assistant",
+      title: "THE PURPOSE OF THE “LPMAX” (Liquidity Pool).",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, cupiditate necessitatibus corrupti tempora consequuntur nam? Unde officia et, tempore enim dolores voluptatem quos similique ducimus.",
+        "Many of us avid crypto currency investors may have been subjected to many types of unfortunate events, such as, scams, rug pulls, honey pots, pump/dumps, etc.. that may have caused an unfair loss.",
       link: "#",
       img: require("../../assets/images/analysis.svg").default,
     },
     {
       id: 3,
-      title: "Analyzer of the News ",
+      title: "Why Static?",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, cupiditate necessitatibus corrupti tempora consequuntur nam? Unde officia et, tempore enim dolores voluptatem quos similique ducimus.",
+        "Static rewards solve a host of problems. First, the reward amount is conditional upon the volume of the token being traded. This mechanism aims to alleviate some of the downward sell pressure put on the token caused by earlier adopters selling their tokens after farming crazy high APY’s.",
       link: "#",
       img: require("../../assets/images/services.svg").default,
     },
     {
       id: 4,
-      title: "Exchange Order Management",
+      title: "Auto buyback and Burn",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, cupiditate necessitatibus corrupti tempora consequuntur nam? Unde officia et, tempore enim dolores voluptatem quos similique ducimus.",
+        "Dream coin implemented the auto buyback and burn feature. This happens automatically when there is a selling. With this, we were ensuring that our LPMAX was safe during buy/sells transactions.",
       link: "#",
       img: require("../../assets/images/line.svg").default,
     },
     {
       id: 5,
-      title: "Module of Price Notification",
+      title: "Manual Burns",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, cupiditate necessitatibus corrupti tempora consequuntur nam? Unde officia et, tempore enim dolores voluptatem quos similique ducimus.",
+        "ometimes burns matter; sometimes they don’t. A continuous burn on any one protocol can be nice in the early days, however, this means the burn cannot be finite or controlled in any way.",
       link: "#",
       img: require("../../assets/images/finder.svg").default,
     },
     {
       id: 6,
-      title: "Module of Price Notification",
+      title: "Dream Protocol",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, cupiditate necessitatibus corrupti tempora consequuntur nam? Unde officia et, tempore enim dolores voluptatem quos similique ducimus.",
+        "The Dream Protocol is a community driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition, & Burn.",
       link: "#",
       img: require("../../assets/images/trading.svg").default,
     },
@@ -56,51 +56,41 @@ function Services(props) {
       <div className="container-xxl">
         <div className="row justify-content-center mb-5 pb-5">
           <div className="col-12 text-center py-3 ">
-            <div className="section_title_design">
-              <span
-                style={{ "--design-bg": "#00A8FF" }}
-                className="design_item me-2"
-              ></span>
-              <span
-                style={{ "--design-bg": "#9C88FF" }}
-                className="design_item me-2"
-              ></span>
-              <span
-                style={{ "--design-bg": "#FBC531" }}
-                className="design_item  me-2"
-              ></span>
-              <span
-                style={{ "--design-bg": "#4CD137" }}
-                className="design_item  me-2"
-              ></span>
-              <span
-                style={{ "--design-bg": "#487EB0" }}
-                className="design_item  me-2"
-              ></span>
-              <span
-                style={{ "--design-bg": "#E84118" }}
-                className="design_item  me-2"
-              ></span>
-              <span
-                style={{ "--design-bg": "#8C7AE6" }}
-                className="design_item"
-              ></span>
-            </div>
-            <h3 className="py-3">Our Core Services</h3>
+            <DesignSectionDot></DesignSectionDot>
+            <h3
+              className="py-3"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="300"
+            >
+              Whitepaper
+            </h3>
           </div>
-          <div className="col-10 col-sm-8 col-lg-6 text-center">
+          <div
+            className="col-10 col-sm-8 col-lg-6 text-center"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="400"
+          >
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, eum
-              ut facilis odio eius unde?
+              It is our hope to minimize market crashes, frustrate scamming
+              techniques and to help improve crypto investing “Hopes” To Make
+              Everyone “Dreams Come True.”
             </p>
           </div>
         </div>
-        <div className="row">
+        <div className="row ">
           {service_card_obj.map((v) => {
             return (
-              <div key={v.id} className="col-md-6 col-lg-4 mb-4 mb-md-5">
-                <div className="px-3 px-md-4">
-                  <div className="card services_card px-3 px-md-4">
+              <div
+                key={v.id}
+                className="col-md-6 col-lg-4 mb-4 mb-md-5 h-auto"
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-delay={(v.id * 100)+400}
+              >
+                <div className="px-3 px-md-4 h-100">
+                  <div className="card services_card px-3 px-md-4 h-100">
                     <div className="card-body">
                       <img src={v.img} alt="img" />
                       <h4 className="card-title py-3 mt-2">{v.title}</h4>

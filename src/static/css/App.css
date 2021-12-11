@@ -2,6 +2,21 @@
   font-size: 10px;
 }
 
+#CryptoAirdropApp {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#CryptoAirdropApp .sticky-top {
+  z-index: 50;
+}
+
+#CryptoAirdropApp img {
+  pointer-events: none;
+}
+
 #CryptoAirdropApp h2 {
   font-size: 4rem;
 }
@@ -36,7 +51,8 @@
   border-bottom: 2px solid rgba(115, 80, 254, 0.4);
 }
 
-#CryptoAirdropApp #nav.navbar a, #CryptoAirdropApp #nav.navbar button {
+#CryptoAirdropApp #nav.navbar a,
+#CryptoAirdropApp #nav.navbar button {
   font-size: 1.3rem;
 }
 
@@ -68,7 +84,7 @@
 }
 
 #CryptoAirdropApp #homeComponent {
-  min-height: 100vh;
+  min-height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,6 +104,24 @@
 @media (max-width: 992px) {
   #CryptoAirdropApp #homeComponent .left_box {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  #CryptoAirdropApp #homeComponent .right_box {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  #CryptoAirdropApp #homeComponent .right_box img {
+    max-height: 400px;
+    width: auto !important;
+  }
+}
+
+@media (max-width: 992px) and (max-width: 768px) {
+  #CryptoAirdropApp #homeComponent .right_box img {
+    max-height: 250px;
   }
 }
 
@@ -158,8 +192,35 @@
   position: relative;
 }
 
+@media (max-width: 750px) {
+  #RoadMap #roadMap_line_wrapper {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media (max-width: 750px) and (max-width: 470) {
+  #RoadMap #roadMap_line_wrapper {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@media (max-width: 750px) and (max-width: 470) and (max-width: 400) {
+  #RoadMap #roadMap_line_wrapper {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+}
+
 #RoadMap #roadMap_line_wrapper p {
   font-size: 1.3rem !important;
+}
+
+@media (max-width: 1050px) {
+  #RoadMap #roadMap_line_wrapper p {
+    font-size: 1.1rem !important;
+  }
 }
 
 #RoadMap #roadMap_line_wrapper::after {
@@ -188,7 +249,20 @@
   position: absolute;
   bottom: 0;
   width: 18rem;
+  left: 10%;
   min-height: 22rem;
+}
+
+@media (max-width: 1050px) {
+  #RoadMap #roadMap_line_wrapper .top_line_cards .line_cards {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #RoadMap #roadMap_line_wrapper .top_line_cards .line_cards {
+    left: -5%;
+  }
 }
 
 #RoadMap #roadMap_line_wrapper .top_line_cards .line_cards .line_duration {
@@ -271,22 +345,27 @@
   width: 100%;
   bottom: 11rem;
   text-align: center;
+  left: -5px;
 }
 
 #RoadMap #roadMap_line_wrapper .top_line_cards .line_cards:nth-of-type(2) {
-  left: calc(20% + 4%);
+  left: 45%;
+}
+
+@media (max-width: 500px) {
+  #RoadMap #roadMap_line_wrapper .top_line_cards .line_cards:nth-of-type(2) {
+    left: 35%;
+  }
 }
 
 #RoadMap #roadMap_line_wrapper .top_line_cards .line_cards:nth-of-type(3) {
-  left: calc(40% + 4%);
+  left: 80%;
 }
 
-#RoadMap #roadMap_line_wrapper .top_line_cards .line_cards:nth-of-type(4) {
-  left: calc(60% + 4%);
-}
-
-#RoadMap #roadMap_line_wrapper .top_line_cards .line_cards:nth-of-type(5) {
-  left: calc(80% + 4%);
+@media (max-width: 500px) {
+  #RoadMap #roadMap_line_wrapper .top_line_cards .line_cards:nth-of-type(3) {
+    left: 74%;
+  }
 }
 
 #RoadMap #roadMap_line_wrapper .top_line_cards .line_cards .line_article_list {
@@ -353,13 +432,13 @@
   background: #170446;
 }
 
-#ICO_update .ico_wrapper {
+#IcoUpdate .ico_wrapper {
   background: #1d66f6;
   position: relative;
   z-index: 2;
 }
 
-#ICO_update .ico_wrapper::after {
+#IcoUpdate .ico_wrapper::after {
   content: "";
   background: url("../../assets/images/wave-shap.png") center/cover no-repeat;
   width: 100%;
@@ -376,12 +455,12 @@
   z-index: -1;
 }
 
-#ICO_update .ico_wrapper .input_custom_group {
+#IcoUpdate .ico_wrapper .input_custom_group {
   max-width: 40rem;
   margin: auto;
 }
 
-#ICO_update .ico_wrapper .input_custom_group input {
+#IcoUpdate .ico_wrapper .input_custom_group input {
   background: transparent;
   padding: 1.5rem;
   color: #fff;
@@ -393,23 +472,23 @@
   border-radius: 0px;
 }
 
-#ICO_update .ico_wrapper .input_custom_group input::-webkit-input-placeholder {
+#IcoUpdate .ico_wrapper .input_custom_group input::-webkit-input-placeholder {
   color: #fff;
 }
 
-#ICO_update .ico_wrapper .input_custom_group input:-ms-input-placeholder {
+#IcoUpdate .ico_wrapper .input_custom_group input:-ms-input-placeholder {
   color: #fff;
 }
 
-#ICO_update .ico_wrapper .input_custom_group input::-ms-input-placeholder {
+#IcoUpdate .ico_wrapper .input_custom_group input::-ms-input-placeholder {
   color: #fff;
 }
 
-#ICO_update .ico_wrapper .input_custom_group input::placeholder {
+#IcoUpdate .ico_wrapper .input_custom_group input::placeholder {
   color: #fff;
 }
 
-#ICO_update .ico_wrapper .input_custom_group button {
+#IcoUpdate .ico_wrapper .input_custom_group button {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 }
@@ -448,7 +527,7 @@
           align-items: center;
 }
 
-#ICO_distribution .more_token_list li {
+#IcoDistribution .more_token_list li {
   border: 1px solid #25cbd3;
 }
 
@@ -505,7 +584,8 @@
   background: #192057;
 }
 
-#Footer p, #Footer span {
+#Footer p,
+#Footer span {
   font-size: 1.3rem;
 }
 

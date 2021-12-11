@@ -5,7 +5,14 @@
 // .........Variable.......
 $cyan: #00e4ff;
 #CryptoAirdropApp {
+  user-select: none;
   // global styles..............
+  .sticky-top {
+    z-index: 50;
+  }
+  img {
+    pointer-events: none;
+  }
   h2 {
     font-size: 4rem;
   }
@@ -29,27 +36,28 @@ $cyan: #00e4ff;
   * {
     color: #fff;
   }
-#nav.navbar{
-  background: #230344!important;
-  border-bottom: 2px solid rgba(115, 80, 254, 0.4);
-  a,button{
-    font-size: 1.3rem;
-  }
-  @media (max-width: 992px){
-    .mobile_design_navbar{
-      position: absolute;
-      display: block!important;
-      width: 100%;
-      left: 0px;
-      background: #192057;
-      text-align: center;
-      padding: 3rem;
-      a{
-        display: block;
+  #nav.navbar {
+    background: #230344 !important;
+    border-bottom: 2px solid rgba(115, 80, 254, 0.4);
+    a,
+    button {
+      font-size: 1.3rem;
+    }
+    @media (max-width: 992px) {
+      .mobile_design_navbar {
+        position: absolute;
+        display: block !important;
+        width: 100%;
+        left: 0px;
+        background: #192057;
+        text-align: center;
+        padding: 3rem;
+        a {
+          display: block;
+        }
       }
     }
   }
-}
   // .........Global Components............
 
   .section_title_design {
@@ -66,7 +74,7 @@ $cyan: #00e4ff;
   // ...........Page Components............
 
   #homeComponent {
-    min-height: 100vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,6 +83,22 @@ $cyan: #00e4ff;
       max-width: 50rem;
       @media (max-width: 992px) {
         max-width: 100%;
+      }
+    }
+    @media (max-width: 992px) {
+      .right_box {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        img {
+          max-height: 400px;
+          width: auto !important;
+        }
+        @media (max-width: 768px) {
+          img {
+            max-height: 250px;
+          }
+        }
       }
     }
   }
@@ -140,12 +164,25 @@ $cyan: #00e4ff;
   background: #010111 url("../../assets/images/bg-roadmap.png") center / cover
     no-repeat;
   min-height: 80vh;
+
   #roadMap_line_wrapper {
     height: 50rem;
     // border: solid red;
+    @media (max-width: 750px) {
+      transform: scale(0.8);
+      @media (max-width: 470) {
+        transform: scale(0.5);
+        @media (max-width: 400) {
+          transform: scale(0.3);
+        }
+      }
+    }
     position: relative;
     p {
       font-size: 1.3rem !important;
+      @media (max-width: 1050px) {
+        font-size: 1.1rem !important;
+      }
     }
     &::after {
       content: "";
@@ -158,6 +195,13 @@ $cyan: #00e4ff;
       background: $cyan;
       box-shadow: 5px 5px 105px $cyan;
       transform: translateY(-50%);
+      // @media (max-width: 900px) {
+      //   width: 4px;
+      //   height: 100%;
+      //   left: 50%;
+      //   transform: translateX(-50%) translateY(0%);
+      //   top: 0;
+      // }
     }
     .top_line_cards {
       position: absolute;
@@ -170,6 +214,13 @@ $cyan: #00e4ff;
         position: absolute;
         bottom: 0;
         width: 18rem;
+        left: 10%;
+        @media (max-width: 1050px) {
+          width: 15rem;
+        }
+        @media (max-width: 500px) {
+          left: -5%;
+        }
         min-height: 22rem;
         .line_duration {
           position: absolute;
@@ -235,20 +286,27 @@ $cyan: #00e4ff;
             width: 100%;
             bottom: 11rem;
             text-align: center;
+            left: -5px;
           }
         }
         &:nth-of-type(2) {
-          left: calc(20% + 4%);
+          left: 45%;
+          @media (max-width: 500px) {
+            left: 35%;
+          }
         }
         &:nth-of-type(3) {
-          left: calc(40% + 4%);
+          left: 80%;
+          @media (max-width: 500px) {
+            left: 74%;
+          }
         }
-        &:nth-of-type(4) {
-          left: calc(60% + 4%);
-        }
-        &:nth-of-type(5) {
-          left: calc(80% + 4%);
-        }
+        // &:nth-of-type(4) {
+        //   left: calc(60% + 4%);
+        // }
+        // &:nth-of-type(5) {
+        //   left: calc(80% + 4%);
+        // }
 
         //
         .line_article_list {
@@ -311,7 +369,7 @@ $cyan: #00e4ff;
 #ico_and_faq {
   background: #170446;
 }
-#ICO_update {
+#IcoUpdate {
   .ico_wrapper {
     background: #1d66f6;
     position: relative;
@@ -380,7 +438,7 @@ $cyan: #00e4ff;
     }
   }
 }
-#ICO_distribution {
+#IcoDistribution {
   .more_token_list {
     li {
       border: 1px solid #25cbd3;
@@ -389,7 +447,7 @@ $cyan: #00e4ff;
 }
 
 #ContactUs {
-  background: url('../../assets/images/pattern.png') no-repeat center/cover;
+  background: url("../../assets/images/pattern.png") no-repeat center/cover;
   #ContactSendingForm {
     .input_box_wrapper * {
       background: transparent;
@@ -416,13 +474,13 @@ $cyan: #00e4ff;
   }
 }
 
-
-#Footer{
+#Footer {
   background: #192057;
-  p,span{
+  p,
+  span {
     font-size: 1.3rem;
   }
-  .anchor_color{
+  .anchor_color {
     color: rgba(255, 255, 255, 0.7);
   }
 }
