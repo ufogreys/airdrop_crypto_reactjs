@@ -4,7 +4,7 @@ function RoadMap(props) {
   return (
     <div id="RoadMap" className="py-5">
       <div className="container-xxl py-5">
-        <div className="row justify-content-center mb-5 pb-5">
+        <div className="row justify-content-center mb-5">
           <div className="col-12 text-center py-3 ">
             <DesignSectionDot></DesignSectionDot>
             <h3
@@ -13,7 +13,7 @@ function RoadMap(props) {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              Roadmap
+              Product Launch Roadmap
             </h3>
           </div>
           <div className="col-10 col-sm-8 col-lg-6 text-center">
@@ -24,7 +24,7 @@ function RoadMap(props) {
           </div>
         </div>
       </div>
-      <div id="roadMap_line_wrapper">
+      <div className="d-none d-xl-block" id="roadMap_line_wrapper">
         {/* top line cards */}
         <div className="top_line_cards">
           {/* line card 1 */}
@@ -37,21 +37,11 @@ function RoadMap(props) {
                 />
               </div>
               <div className="line_content_wrapper">
-                <ul className="list-unstyled text-start line_article_list">
-                  <li>
-                    <p>Apploy for new exchange listings</p>
-                  </li>
-                  <li>
-                    <p>Dream wallet app for iOS, Android and Web</p>
-                  </li>
-                  <li>
-                    <p>Partnership with Simplex and/or Transak</p>
-                  </li>
-                </ul>
+                <p>Emergence and design of the idea</p>
               </div>
-              <div className="line_duration">
-                <p>Q4 2022</p>
-              </div>
+            </div>
+            <div className="line_duration">
+              <p>Q2 2022</p>
             </div>
           </div>
           {/* line card 1 End*/}
@@ -68,13 +58,13 @@ function RoadMap(props) {
               <div className="line_content_wrapper">
                 <ul className="list-unstyled text-start line_article_list">
                   <li>
-                    <p>Launch Token Website</p>
+                    <p>
+                      start development of the ealier version and crypto wallet
+                      version
+                    </p>
                   </li>
                   <li>
-                    <p>Apploy for Listing on Coingecko</p>
-                  </li>
-                  <li>
-                    <p>Apply for Listing on CoinMarketCap</p>
+                    <p>negotiations on partnerships</p>
                   </li>
                 </ul>
               </div>
@@ -97,18 +87,13 @@ function RoadMap(props) {
               <div className="line_content_wrapper">
                 <ul className="list-unstyled text-start line_article_list">
                   <li>
-                    <p>Begin Marketing on Social Media</p>
+                    <p>Crowdsale</p>
                   </li>
                   <li>
-                    <p>
-                      Expand team by 15% to support future development at
-                      headquarters
-                    </p>
+                    <p>marketing campaign</p>
                   </li>
                   <li>
-                    <p>
-                      Press release announcing Dream and project initiatives
-                    </p>
+                    <p>listing to the major exchanges</p>
                   </li>
                 </ul>
               </div>
@@ -117,6 +102,258 @@ function RoadMap(props) {
               </div>
             </div>
           </div>
+          {/* line card 3 End */}
+          {/* line card 4 */}
+          <div className="line_cards">
+            <div className="line_with_icons">
+              <div className="icon_wrapper">
+                <img
+                  src={require("../../assets/images/pen.svg").default}
+                  alt=""
+                />
+              </div>
+              <div className="line_content_wrapper">
+                <ul className="list-unstyled text-start line_article_list">
+                  <li>
+                    <p>Mobile App</p>
+                  </li>
+                  <li>
+                    <p>Explorer</p>
+                  </li>
+                  <li>
+                    <p>new partnerships and new marketplace suppor</p>
+                  </li>
+                </ul>
+              </div>
+              <div className="line_duration">
+                <p>Q4 2022</p>
+              </div>
+            </div>
+          </div>
+          {/* line card 4 End */}
+
+          {/* line card 5 */}
+          <div className="line_cards">
+            <div className="line_with_icons">
+              <div className="icon_wrapper">
+                <img
+                  src={require("../../assets/images/pen.svg").default}
+                  alt=""
+                />
+              </div>
+              <div className="line_content_wrapper">
+                <ul className="list-unstyled text-start line_article_list">
+                  <li>
+                    <p> Platform integration to electronic marketplaces</p>
+                  </li>
+                  <li>
+                    <p>Zero Fee</p>
+                  </li>
+                </ul>
+              </div>
+              <div className="line_duration">
+                <p>Q2 2022</p>
+              </div>
+            </div>
+          </div>
+          {/* line card 5 End */}
+        </div>
+      </div>
+      <div className="d-xl-none" id="roadMap_mobile_line">
+        <span id="line_draw"></span>
+        {/* left side */}
+        <div className="line_content_wrapper_left">
+          <div className="line_content">
+            <h4>3 MONTHS</h4>
+            <ul className="list-unstyled m-0">
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>{" "}
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+            </ul>
+          </div>
+          <div className="line_content">
+            <h4>1 MONTHS</h4>
+            <ul className="list-unstyled m-0">
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>{" "}
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div className="line_content">
+            <h4>2 WEEKS</h4>
+            <ul className="list-unstyled m-0">
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>{" "}
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+            </ul>
+          </div>
+          <div className="line_content">
+            <h4>LAUNCH WEEK</h4>
+            <ul className="list-unstyled m-0">
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>{" "}
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        {/* left side */}
+
+        <div className="line_content_wrapper_right">
+          {/* right side  */}
+          <div className="line_content">
+            <h4>4 MONTHS</h4>
+            <ul className="list-unstyled m-0">
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>{" "}
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+            </ul>
+          </div>
+          <div className="line_content">
+            <h4>2 MONTHS</h4>
+            <ul className="list-unstyled m-0">
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div className="line_content">
+            <h4>3 WEEKS</h4>
+            <ul className="list-unstyled m-0">
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div className="line_content">
+            <h4>1 WEEK</h4>
+            <ul className="list-unstyled m-0">
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div className="line_content">
+            <h4>After Launch</h4>
+            <ul className="list-unstyled m-0">
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+              <li>
+                {" "}
+                <i className="fa fa-check-circle" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </li>
+            </ul>
+          </div>
+
+          {/* right side  */}
         </div>
       </div>
     </div>

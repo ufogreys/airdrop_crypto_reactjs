@@ -168,21 +168,9 @@ $cyan: #00e4ff;
   #roadMap_line_wrapper {
     height: 50rem;
     // border: solid red;
-    @media (max-width: 750px) {
-      transform: scale(0.8);
-      @media (max-width: 470) {
-        transform: scale(0.5);
-        @media (max-width: 400) {
-          transform: scale(0.3);
-        }
-      }
-    }
     position: relative;
     p {
       font-size: 1.3rem !important;
-      @media (max-width: 1050px) {
-        font-size: 1.1rem !important;
-      }
     }
     &::after {
       content: "";
@@ -195,13 +183,6 @@ $cyan: #00e4ff;
       background: $cyan;
       box-shadow: 5px 5px 105px $cyan;
       transform: translateY(-50%);
-      // @media (max-width: 900px) {
-      //   width: 4px;
-      //   height: 100%;
-      //   left: 50%;
-      //   transform: translateX(-50%) translateY(0%);
-      //   top: 0;
-      // }
     }
     .top_line_cards {
       position: absolute;
@@ -214,15 +195,8 @@ $cyan: #00e4ff;
         position: absolute;
         bottom: 0;
         width: 18rem;
-        left: 10%;
-        @media (max-width: 1050px) {
-          width: 15rem;
-        }
-        @media (max-width: 500px) {
-          left: -5%;
-        }
         min-height: 22rem;
-        .line_duration {
+        .line_duration{
           position: absolute;
           bottom: -5.5rem;
           left: 50%;
@@ -286,27 +260,20 @@ $cyan: #00e4ff;
             width: 100%;
             bottom: 11rem;
             text-align: center;
-            left: -5px;
           }
         }
         &:nth-of-type(2) {
-          left: 45%;
-          @media (max-width: 500px) {
-            left: 35%;
-          }
+          left: calc(20% + 4%);
         }
         &:nth-of-type(3) {
-          left: 80%;
-          @media (max-width: 500px) {
-            left: 74%;
-          }
+          left: calc(40% + 4%);
         }
-        // &:nth-of-type(4) {
-        //   left: calc(60% + 4%);
-        // }
-        // &:nth-of-type(5) {
-        //   left: calc(80% + 4%);
-        // }
+        &:nth-of-type(4) {
+          left: calc(60% + 4%);
+        }
+        &:nth-of-type(5) {
+          left: calc(80% + 4%);
+        }
 
         //
         .line_article_list {
@@ -345,6 +312,184 @@ $cyan: #00e4ff;
               background: $cyan;
             }
           }
+        }
+      }
+    }
+  }
+  #roadMap_mobile_line {
+    height: 100rem;
+    // border: solid red;
+    position: relative;
+    @media (max-width: 620px){
+      zoom: .8;
+      @media (max-width: 500px){
+        zoom: .6;
+        @media (max-width: 380px){
+          zoom: .5;
+        }
+      }
+    }
+    #line_draw {
+      position: absolute;
+      left: 50%;
+      top: 2rem;
+      transform: translateX(-50%);
+      width: 0.4rem;
+      height: calc(100% - 20rem);
+      background: #08b1b1;
+    }
+    .line_content_wrapper_left {
+      position: absolute;
+      width: 60rem;
+      height: 100%;
+      // border: solid red;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+
+      .line_content {
+        position: absolute;
+        left: 0;
+        top: 0.6rem;
+        text-align: right;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 1.4rem;
+          width: 4.5rem;
+          height: 0.4rem;
+          background: #08b1b1;
+          left: 100%;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 1.5rem;
+          height: 1.5rem;
+          border: solid #08b1b1;
+          border-radius: 50%;
+          top: 1rem;
+          left: 116.5%;
+          background: #010111;
+          z-index: 11;
+        }
+        h4 {
+          display: inline-block;
+          padding: 0.5rem 2rem;
+          background: #08b1b1;
+          color: white;
+          border-radius: 1rem;
+          margin-bottom: 1rem;
+        }
+        ul {
+          width: 25rem;
+          background: #230344;
+          color: white;
+          padding: 1rem 1.5rem;
+          border-radius: 1rem;
+          li {
+            display: flex;
+            i {
+              font-size: 1.6rem;
+              display: inline-block;
+              margin-right: 0.5rem;
+              margin-top: 0.5rem;
+            }
+          }
+        }
+        &:nth-child(1) {
+          top: 10rem;
+        }
+        &:nth-child(2) {
+          top: 30rem;
+        }
+         &:nth-child(3) {
+           top: 50rem;
+         }
+        &:nth-child(4) {
+          top: 70rem;
+        }
+        &:nth-child(5) {
+          top: 90rem;
+        }
+        &:nth-child(6) {
+          top: 100rem;
+        }
+      }
+    }
+    .line_content_wrapper_right {
+      position: absolute;
+      width: 60rem;
+      height: 100%;
+      // border: solid red;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      .line_content {
+        position: absolute;
+        right: 0;
+        top: 0.6rem;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 1.4rem;
+          width: 4.5rem;
+          height: 0.4rem;
+          background: #08b1b1;
+          right: 100%;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 1.5rem;
+          height: 1.5rem;
+          border: solid #08b1b1;
+          border-radius: 50%;
+          top: 1rem;
+          right: 116.5%;
+          background: #010111;
+          z-index: 11;
+        }
+        h4 {
+          display: inline-block;
+          padding: 0.5rem 2rem;
+          background: #08b1b1;
+          color: white;
+          border-radius: 1rem;
+          margin-bottom: 1rem;
+        }
+        ul {
+          width: 25rem;
+          background: #230344;
+          color: white;
+          padding: 1rem 1.5rem;
+          border-radius: 1rem;
+          li {
+            display: flex;
+            i {
+              font-size: 1.6rem;
+              display: inline-block;
+              margin-right: 0.5rem;
+              margin-top: 0.5rem;
+            }
+          }
+        }
+        &:nth-child(2) {
+          top: 20rem;
+        }
+        &:nth-child(3) {
+          top: 40rem;
+        }
+        &:nth-child(4) {
+          top: 60rem;
+        }
+        &:nth-child(5) {
+          top: 80rem;
+        }
+        &:nth-child(6) {
+          top: 100rem;
         }
       }
     }

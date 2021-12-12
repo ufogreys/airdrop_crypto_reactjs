@@ -10,8 +10,20 @@ function FAQ(props) {
           <div className="col-md-6 col-lg-7">
             <div className=" py-3 ">
               <DesignSectionDot></DesignSectionDot>
-              <h3 className="py-3">Frequently Asked Questions</h3>
-              <p className="w-75">
+              <h3
+                className="py-3"
+                data-aos-once="true"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                Frequently Asked Questions
+              </h3>
+              <p
+                className="w-75"
+                data-aos-once="true"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 Dream Coin is a charitable based token. Dream coin holders makes
                 suggestions and vote on all charitable donations. Donations will
                 go to hospitals, children, homeless and animal organizations, as
@@ -40,7 +52,12 @@ export default FAQ;
 function FaqAccordion() {
   return (
     <div className="accordion accordion-flush" id="accordionFlushExample">
-      <div className="accordion-item">
+      <div
+        className="accordion-item"
+        data-aos-once="true"
+        data-aos="fade-right"
+        data-aos-delay="100"
+      >
         <h2 className="accordion-header " id="flush-headingOne">
           <button
             className="accordion-button collapsed"
@@ -69,7 +86,12 @@ function FaqAccordion() {
           </div>
         </div>
       </div>
-      <div className="accordion-item">
+      <div
+        className="accordion-item"
+        data-aos-once="true"
+        data-aos="fade-right"
+        data-aos-delay="200"
+      >
         <h2 className="accordion-header" id="flush-headingTwo">
           <button
             className="accordion-button collapsed"
@@ -100,7 +122,12 @@ function FaqAccordion() {
           </div>
         </div>
       </div>
-      <div className="accordion-item">
+      <div
+        className="accordion-item"
+        data-aos-once="true"
+        data-aos="fade-right"
+        data-aos-delay="300"
+      >
         <h2 className="accordion-header" id="flush-headingThree">
           <button
             className="accordion-button collapsed"
@@ -144,7 +171,12 @@ function FaqAccordion() {
         </div>
       </div>
 
-      <div className="accordion-item">
+      <div
+        className="accordion-item"
+        data-aos-once="true"
+        data-aos="fade-right"
+        data-aos-delay="400"
+      >
         <h2 className="accordion-header" id="flush-headingFour">
           <button
             className="accordion-button collapsed"
@@ -234,28 +266,55 @@ function TokenSaleEnd() {
   };
   return (
     <div id="TokenSaleEnd" className="p-3 p-md-5 rounded-5">
-      <h3 className="text-center mb-3 mb-md-5">Token Sale Ends In</h3>
+      <h3
+        className="text-center mb-3 mb-md-5"
+        data-aos-once="true"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        Token Sale Ends In
+      </h3>
       <div className="sale_duration_wrapper d-flex justify-content-between">
-        <div className="sale_item">
+        <div
+          className="sale_item"
+          data-aos-once="true"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <span className="d-flex">
             <Countdown date={Date.now() + defaultDate} renderer={days} />
           </span>
           <span className="d-block">days</span>
         </div>
-        <div className="sale_item">
+        <div
+          className="sale_item"
+          data-aos-once="true"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <span className="d-flex">
             <Countdown date={Date.now() + defaultDate} renderer={hours} />
           </span>
           <span className="d-block">hours</span>
         </div>
-        <div className="sale_item">
+        <div
+          className="sale_item"
+          data-aos-once="true"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <span className="d-flex">
             {" "}
             <Countdown date={Date.now() + defaultDate} renderer={minutes} />
           </span>
           <span className="d-block">minutes</span>
         </div>
-        <div className="sale_item">
+        <div
+          className="sale_item"
+          data-aos-once="true"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <span className="d-flex">
             <Countdown date={Date.now() + defaultDate} renderer={seconds} />
           </span>
@@ -263,7 +322,12 @@ function TokenSaleEnd() {
         </div>
       </div>
 
-      <div className="btn_control text-center py-3 pt-md-5">
+      <div
+        className="btn_control text-center py-3 pt-md-5"
+        data-aos-once="true"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
         <button className="btn btn-light text-success rounded-pill">
           Buy More Tokens
         </button>

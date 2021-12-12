@@ -25,7 +25,7 @@ function Navbar(props) {
         {
             id: 5,
             name: 'Reward BNB',
-            link: '#IcoUpdate'
+            link: '#'
         },
         {
             id: 6,
@@ -35,7 +35,7 @@ function Navbar(props) {
         {
             id: 7,
             name: 'Airdrop',
-            link: '#'
+            link: '#IcoUpdate'
         }
 
     ]

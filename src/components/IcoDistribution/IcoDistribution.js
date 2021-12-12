@@ -9,8 +9,20 @@ function IcoDistribution(props) {
           <div className="col-11 col-md-9">
             <div className=" py-3 text-center">
               <DesignSectionDot></DesignSectionDot>
-              <h3 className="py-3">Presale</h3>
-              <p className="w-75 mx-auto">
+              <h3
+                className="py-3"
+                data-aos-once="true"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                Presale
+              </h3>
+              <p
+                className="w-75 mx-auto"
+                data-aos-once="true"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 All of this is an effort to alleviate some of the troubles we
                 have seen with the current DeFi reflection tokens. We are
                 confident that this model and protocol will prevail over the
@@ -22,8 +34,18 @@ function IcoDistribution(props) {
         <div className="row">
           <div className="col-md-6">
             <div className="col_wrapper text-center p-3 p-md-5">
-              <h3 className="text-center py-4 py-md-5">Token Allocation</h3>
+              <h3
+                className="text-center py-4 py-md-5"
+                data-aos-once="true"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
+                Token Allocation
+              </h3>
               <img
+                data-aos-once="true"
+                data-aos="zoom-in-out"
+                data-aos-delay="100"
                 className="w-100"
                 src={require("../../assets/images/allocation.png").default}
                 alt="allocation"
@@ -32,10 +54,22 @@ function IcoDistribution(props) {
           </div>
           <div className="col-md-6">
             <div className="col_wrapper p-3 p-md-5">
-              <h3 className="text-center py-4 py-md-5">More Token Info</h3>
+              <h3
+                className="text-center py-4 py-md-5"
+                data-aos-once="true"
+                data-aos="fade-left"
+                data-aos-delay="100"
+              >
+                More Token Info
+              </h3>
 
               <ul className="list-unstyled m-0 p-0 more_token_list">
-                <li className="p-3 mb-4 rounded-5">
+                <li
+                  className="p-3 mb-4 rounded-5"
+                  data-aos-once="true"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
                   <p className="py-0 my-0">
                     {" "}
                     <img
@@ -49,7 +83,12 @@ function IcoDistribution(props) {
                     Lorem ipsum dolor sit amet.
                   </p>
                 </li>
-                <li className="p-3 mb-4 rounded-5">
+                <li
+                  className="p-3 mb-4 rounded-5"
+                  data-aos-once="true"
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                >
                   <p className="py-0 my-0">
                     {" "}
                     <img
@@ -63,7 +102,12 @@ function IcoDistribution(props) {
                     consectetur adipisicing elit. Perspiciatis, autem?.
                   </p>
                 </li>
-                <li className="p-3 mb-4 rounded-5">
+                <li
+                  className="p-3 mb-4 rounded-5"
+                  data-aos-once="true"
+                  data-aos="fade-right"
+                  data-aos-delay="400"
+                >
                   <p className="py-0 my-0">
                     <img
                       className="px-3"
@@ -77,7 +121,12 @@ function IcoDistribution(props) {
                   </p>
                 </li>
 
-                <li className="p-3 mb-4 rounded-5">
+                <li
+                  className="p-3 mb-4 rounded-5"
+                  data-aos-once="true"
+                  data-aos="fade-right"
+                  data-aos-delay="500"
+                >
                   <p className="py-0 my-0">
                     <img
                       className="px-3"
@@ -90,7 +139,12 @@ function IcoDistribution(props) {
                     tur adipisicing elit. Perspiciatis,{" "}
                   </p>
                 </li>
-                <li className="p-3 mb-4 rounded-5">
+                <li
+                  className="p-3 mb-4 rounded-5"
+                  data-aos-once="true"
+                  data-aos="fade-right"
+                  data-aos-delay="600"
+                >
                   <p className="py-0 my-0">
                     <img
                       className="px-3"
