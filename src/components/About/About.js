@@ -98,6 +98,152 @@ function About(props) {
         </div>
 
         <div className="row left_right_side_row1 justify-content-center justify-content-md-stretch  mb-5  pb-5">
+          <div className="right_box col-md-6 col-lg-7 col-xl-7">
+            <div className="px-3 px-md-5">
+              <DesignSectionDot></DesignSectionDot>
+              <h3
+                className="py-3"
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-delay="100"
+              >
+                We Have Accomplished The Following Since July 25, 2021 Fair
+                Launch.
+              </h3>
+              <div className="content py-4">
+                <p
+                  className="mb-3"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos-delay="200"
+                >
+                  Acquired Over 1600 Twitter Followers
+                </p>
+                <p
+                  className="mb-3"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos-delay="300"
+                >
+                  Acquired Over 1500 Telegram Members
+                </p>
+                <p
+                  className="mb-3"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos-delay="400"
+                >
+                  Hit An ATH of 44k Market Cap
+                </p>
+                <p
+                  className="mb-3"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos-delay="500"
+                >
+                  We Have Achieved Attaining Over 450 Dream Coin Holders
+                </p>
+                <p
+                  className="mb-3"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos-delay="600"
+                >
+                  We’ve Applied To Be Listed on Coin Market Cap (CMC) Exchange
+                </p>
+                <p
+                  className="mb-3"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos-delay="700"
+                >
+                  We’ve Applied To Be Listed On CoinGecko Exchange
+                </p>
+                <p
+                  className="mb-3"
+                  data-aos="fade-up"
+                  data-aos-once="true"
+                  data-aos-delay="800"
+                >
+                  We are On A Continuous & Organic Incline Of Achievements.
+                </p>
+              </div>
+
+              <div className="btn_wrapper">
+                <button
+                  className="btn btn-primary btn-sm px-3 px-md-5 rounded-pill"
+                  data-aos="fade-right"
+                  data-aos-once="true"
+                  data-aos-delay="1000"
+                >
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="left_box col-md-6 col-lg-5 col-xl-5 text-center">
+            <img
+              className="w-100"
+              src={require("../../assets/images/solution.png").default}
+              alt="img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default About;
+
+export function Features() {
+  return (
+    <div id="Features">
+      <div className="container-xxl py-5">
+        <div className="row mb-5 pb-5 justify-content-center">
+          <div className="col-10 col-md-8 col-lg-6 text-center">
+            <DesignSectionDot></DesignSectionDot>
+            <h3
+              className="py-3"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-delay="100"
+            >
+              Watch Our Demo Video
+            </h3>
+
+            <p data-aos="fade-up" data-aos-once="true" data-aos-delay="500">
+              The Dream Protocol is a community driven, fair launched DeFi
+              Token. Three simple functions occur during each trade: Reflection,
+              LP Acquisition, & Burn.
+            </p>
+          </div>
+          <div className="col-12 py-5"></div>
+
+          <div className="col-11 col-sm-10 col-md-8 col-lg-6">
+            <div className="watch_box_wrapper rounded-5">
+              <button
+                className="btn btn-secondary"
+                data-mdb-target="#watchModalView"
+                data-mdb-toggle="modal"
+              >
+                <i className="far fa-play-circle fa-3x"></i>
+              </button>
+              <WatchModal></WatchModal>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function RewardBnb() {
+  return (
+    <div id="RewardBnb">
+      <div className="container-xxl py-5">
+        <div className="row left_right_side_row1 justify-content-center justify-content-md-stretch  mb-5  pb-5">
           <div className="left_box col-md-6 col-lg-5 col-xl-5 text-center">
             <img
               className="w-100"
@@ -126,11 +272,11 @@ function About(props) {
               </div>
 
               <div className="btn_wrapper">
-                <button className="btn btn-sm px-5 m-3 rounded-pill  btn-danger"
-                
-                data-aos="fade-up"
-                data-aos-delay="400"
-                data-aos-once="true"
+                <button
+                  className="btn btn-sm px-5 m-3 rounded-pill  btn-danger"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  data-aos-once="true"
                 >
                   Connect Wallet
                 </button>
@@ -147,91 +293,7 @@ function About(props) {
             </div>
           </div>
         </div>
-
-        <div className="row left_right_side_row1 justify-content-center justify-content-md-stretch  mb-5  pb-5">
-          <div className="right_box col-md-6 col-lg-7 col-xl-7">
-            <div className="px-3 px-md-5">
-              <DesignSectionDot></DesignSectionDot>
-              <h3 className="py-3" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-                We Have Accomplished The Following Since July 25, 2021 Fair
-                Launch.
-              </h3>
-              <div className="content py-4">
-                <p className="mb-3"  data-aos="fade-up" data-aos-once="true" data-aos-delay="200">Acquired Over 1600 Twitter Followers</p>
-                <p className="mb-3"  data-aos="fade-up" data-aos-once="true" data-aos-delay="300">Acquired Over 1500 Telegram Members</p>
-                <p className="mb-3"  data-aos="fade-up" data-aos-once="true" data-aos-delay="400">Hit An ATH of 44k Market Cap</p>
-                <p className="mb-3"  data-aos="fade-up" data-aos-once="true" data-aos-delay="500">
-                  We Have Achieved Attaining Over 450 Dream Coin Holders
-                </p>
-                <p className="mb-3"  data-aos="fade-up" data-aos-once="true" data-aos-delay="600">
-                  We’ve Applied To Be Listed on Coin Market Cap (CMC) Exchange
-                </p>
-                <p className="mb-3"  data-aos="fade-up" data-aos-once="true" data-aos-delay="700">
-                  We’ve Applied To Be Listed On CoinGecko Exchange
-                </p>
-                <p className="mb-3"  data-aos="fade-up" data-aos-once="true" data-aos-delay="800">
-                  We are On A Continuous & Organic Incline Of Achievements.
-                </p>
-              </div>
-
-              <div className="btn_wrapper">
-                <button className="btn btn-primary btn-sm px-3 px-md-5 rounded-pill"  data-aos="fade-right" data-aos-once="true" data-aos-delay="1000">
-                  Read more
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="left_box col-md-6 col-lg-5 col-xl-5 text-center">
-            <img
-              className="w-100"
-              src={require("../../assets/images/solution.png").default}
-              alt="img"
-            />
-          </div>
-        </div>
-
-        <div className="row mb-5 pb-5 justify-content-center">
-          <div className="col-10 col-md-8 col-lg-6 text-center">
-            <DesignSectionDot></DesignSectionDot>
-            <h3
-              className="py-3"
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-delay="100"
-            >
-              Watch Our Demo Video
-            </h3>
-
-            <p data-aos="fade-up" data-aos-once="true" data-aos-delay="500">
-              The Dream Protocol is a community driven, fair launched DeFi
-              Token. Three simple functions occur during each trade: Reflection,
-              LP Acquisition, & Burn.
-            </p>
-          </div>
-          <div className="col-12 py-5"></div>
-
-          <div className="col-11 col-sm-10 col-md-8 col-lg-6">
-            <div
-              className="watch_box_wrapper rounded-5"
-            >
-              <button
-                className="btn btn-secondary"
-                data-mdb-target="#watchModalView"
-                data-mdb-toggle="modal"
-                data-aos="zoom-in-up"
-                data-aos-once="true"  data-aos-delay="700"
-              >
-                <i className="far fa-play-circle fa-3x"></i>
-              </button>
-
-              <WatchModal></WatchModal>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+    </div>
   );
 }
-
-export default About;

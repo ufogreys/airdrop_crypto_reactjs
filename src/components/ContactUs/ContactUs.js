@@ -3,7 +3,7 @@ import DesignSectionDot from "../DesignSectionDot/DesignSectionDot";
 function ContactUs(props) {
   return (
     <div id="ContactUs">
-      <div className="container-xxl">
+      <div className="container-xxl py-5">
         <div className="row">
           <div className="col-12">
             <div className=" py-3 text-center">

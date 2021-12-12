@@ -4,7 +4,7 @@ import DesignSectionDot from "../DesignSectionDot/DesignSectionDot";
 function IcoDistribution(props) {
   return (
     <div id="IcoDistribution">
-      <div className="container-xxl">
+      <div className="container-xxl py-5">
         <div className="row justify-content-center">
           <div className="col-11 col-md-9">
             <div className=" py-3 text-center">

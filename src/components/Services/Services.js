@@ -53,7 +53,7 @@ function Services(props) {
   ];
   return (
     <section id="ServicesComponent">
-      <div className="container-xxl">
+      <div className="container-xxl py-5">
         <div className="row justify-content-center mb-5 pb-5">
           <div className="col-12 text-center py-3 ">
             <DesignSectionDot></DesignSectionDot>

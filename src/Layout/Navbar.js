@@ -1,43 +1,54 @@
 import React from "react";
 import Logo from '../assets/images/image01.png'
+import {Link} from 'react-router-dom'
 function Navbar(props) {
     let navLinks = [
         {
             id: 1,
             name: 'Home',
-            link: '#'
+            link: '/'
         },
         {
             id: 2,
             name: 'Roadmap',
-            link: '#RoadMap'
+            link: '/roadmap'
         },
+        
         {
             id: 3,
             name: 'Whitepaper',
-            link: '#ServicesComponent'
+            link: '/whitepaper'
         },
         {
             id: 4,
             name: 'Contact',
-            link: '#ContactUs'
+            link: '/contact_us'
         },
         {
             id: 5,
             name: 'Reward BNB',
-            link: '#AboutComponent'
+            link: '/reward_bnb'
         },
         {
             id: 6,
             name: 'Presale',
-            link: '#IcoDistribution'
+            link: '/presale'
         },
         {
             id: 7,
             name: 'Airdrop',
-            link: '#IcoUpdate'
+            link: '/airdrop'
+        },
+        {
+            id: 8,
+            name: 'About Us',
+            link: '/about'
+        },
+        {
+            id: 9,
+            name: 'Feature',
+            link: '/feature'
         }
-
     ]
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
@@ -53,7 +64,6 @@ function Navbar(props) {
 
                     />
                 </a>
-
                 {/* <!-- Toggle button --> */}
                 <button
                     className="navbar-toggler"
@@ -76,7 +86,7 @@ function Navbar(props) {
 
                     <div className="d-flex align-items-center mobile_design_navbar">
                         {navLinks.map(v => {
-                            return <a data-aos-once="true" data-aos="fade-right" data-aos-delay={v.id * 50} data-aos-offset="0" href={v.link} key={v.id} className="btn btn-muted me-1 shadow-0 text-white"> {v.name} </a>
+                            return <Link to={v.link} data-aos-once="true" data-aos="fade-right" data-aos-delay={v.id * 50} data-aos-offset="0" key={v.id} className="btn btn-muted me-1 shadow-0 text-white">{v.name} </Link>
                         })}
                         <button type="button" data-aos-once="true" data-aos="fade-left" data-aos-delay="350" className="btn btn-outline-secondary px-5 mt-3 mt-lg-0 rounded-pill">
                             Connect

@@ -107,6 +107,7 @@ $cyan: #00e4ff;
   }
   #AboutComponent {
     min-height: 80vh;
+    background: linear-gradient(-33deg, #3f0959, #140241);
     .trusted_card {
       box-shadow: 4px 5px 10px rgba(164, 22, 253, 0.884);
     }
@@ -118,38 +119,45 @@ $cyan: #00e4ff;
         }
       }
     }
-    .watch_box_wrapper {
-      width: 100%;
-      height: 35rem;
-      background: #fff url("../../assets/images/bg-4.jpg") center/cover
-        no-repeat;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      //   &::before {
-      //     content: "";
-      //     position: absolute;
-      //     bottom: -2rem;
-      //     right: -2rem;
-      //     border: 2px solid #fff;
-      //     width: 100%;
-      //     height: 100%;
-      //     border-radius: 25px;
-      //     z-index: -3;
-      //   }
-      button {
-        width: 10rem;
-        height: 10rem;
-        border-radius: 50%;
-      }
-      #watchModalView .modal-body {
-        height: 40rem;
-      }
-    }
+  }
+}
+#Features {
+  min-height: 70vh;
+  background: linear-gradient(-33deg, #3f0959, #140241);
+}
+#RewardBnb {
+  background: linear-gradient(-33deg, #3f0959, #140241);
+}
+.watch_box_wrapper {
+  width: 100%;
+  height: 35rem;
+  background: #fff url("../../assets/images/bg-4.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     bottom: -2rem;
+  //     right: -2rem;
+  //     border: 2px solid #fff;
+  //     width: 100%;
+  //     height: 100%;
+  //     border-radius: 25px;
+  //     z-index: -3;
+  //   }
+  button {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
+  #watchModalView .modal-body {
+    height: 40rem;
   }
 }
 
 #ServicesComponent {
+  background: linear-gradient(-33deg, #3f0959, #140241);
   .services_card {
     background: transparent !important;
     border: 1px solid #08b1b1;
@@ -196,7 +204,7 @@ $cyan: #00e4ff;
         bottom: 0;
         width: 18rem;
         min-height: 22rem;
-        .line_duration{
+        .line_duration {
           position: absolute;
           bottom: -5.5rem;
           left: 50%;
@@ -320,12 +328,12 @@ $cyan: #00e4ff;
     height: 100rem;
     // border: solid red;
     position: relative;
-    @media (max-width: 620px){
-      zoom: .8;
-      @media (max-width: 500px){
-        zoom: .6;
-        @media (max-width: 380px){
-          zoom: .5;
+    @media (max-width: 620px) {
+      zoom: 0.8;
+      @media (max-width: 500px) {
+        zoom: 0.6;
+        @media (max-width: 380px) {
+          zoom: 0.5;
         }
       }
     }
@@ -404,9 +412,9 @@ $cyan: #00e4ff;
         &:nth-child(2) {
           top: 30rem;
         }
-         &:nth-child(3) {
-           top: 50rem;
-         }
+        &:nth-child(3) {
+          top: 50rem;
+        }
         &:nth-child(4) {
           top: 70rem;
         }
@@ -515,6 +523,7 @@ $cyan: #00e4ff;
   background: #170446;
 }
 #IcoUpdate {
+  background: #170446;
   .ico_wrapper {
     background: #1d66f6;
     position: relative;
@@ -558,6 +567,7 @@ $cyan: #00e4ff;
 }
 
 #frequently_ask_question {
+  background: #170446;
   .accordion * {
     background: transparent;
   }
@@ -584,6 +594,7 @@ $cyan: #00e4ff;
   }
 }
 #IcoDistribution {
+  background: #170446;
   .more_token_list {
     li {
       border: 1px solid #25cbd3;
@@ -592,7 +603,8 @@ $cyan: #00e4ff;
 }
 
 #ContactUs {
-  background: url("../../assets/images/pattern.png") no-repeat center/cover;
+  background: #170446 url("../../assets/images/pattern.png") no-repeat
+    center/cover;
   #ContactSendingForm {
     .input_box_wrapper * {
       background: transparent;

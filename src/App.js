@@ -9,35 +9,43 @@ import IcoUpdate from "./components/IcoUpdate/IcoUpdate";
 import FAQ from "./components/FAQ/FAQ";
 import IcoDistribution from "./components/IcoDistribution/IcoDistribution";
 import ContactUs from "./components/ContactUs/ContactUs";
-import AnimatedCursor from "react-animated-cursor"
+import AnimatedCursor from "react-animated-cursor";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Features } from "./components/About/About";
+import { RewardBnb } from "./components/About/About";
+import WatchModal from "./components/WatchModal/WatchModal";
 function App() {
   return (
     <div id="CryptoAirdropApp">
-      {/* cursor animatation */}
-      <AnimatedCursor  innerSize={12}
-      outerSize={20}
-      color='193, 11, 111'
-      outerAlpha={0.2}
-      innerScale={0.7}
-      outerScale={5}
-      trailingSpeed={15}></AnimatedCursor>
-      <Base>
-        <Home></Home>
-        <div id="AboutAndServices">
-          <About></About>
-          <Services></Services>
-        </div>
-        <RoadMap></RoadMap>
-        <div id="ico_and_faq">
-          <IcoUpdate></IcoUpdate>
-          <FAQ></FAQ>
-          <IcoDistribution></IcoDistribution>
-          <ContactUs></ContactUs>
-        </div>
-      </Base>
+      <BrowserRouter>
+        {/* cursor animatation */}
+        <AnimatedCursor
+          innerSize={12}
+          outerSize={20}
+          color="193, 11, 111"
+          outerAlpha={0.2}
+          innerScale={0.7}
+          outerScale={5}
+          trailingSpeed={15}
+        ></AnimatedCursor>
+        <Base>
+          <Routes>
+            <Route path="/" element={<Home></Home>} />
+            <Route path="/contact_us" element={<ContactUs />} />
+            <Route path="/roadmap" element={<RoadMap />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/feature" element={<Features />} />
+            <Route path="/whitepaper" element={<Services />} />
+            <Route path="/airdrop" element={<IcoUpdate />} />
+            <Route path="/presale" element={<IcoDistribution />} />
+            <Route path="/reward_bnb" element={<RewardBnb />} />
+          </Routes>
+        </Base>
 
-      {/* Aside fix item */}
-      <LeftSideNavbar></LeftSideNavbar>
+        {/* Aside fix item */}
+        <LeftSideNavbar></LeftSideNavbar>
+      </BrowserRouter>
+      <WatchModal></WatchModal>
     </div>
   );
 }
