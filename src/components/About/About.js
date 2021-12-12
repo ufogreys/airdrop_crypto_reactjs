@@ -227,10 +227,12 @@ export function Features() {
                 className="btn btn-secondary"
                 data-mdb-target="#watchModalView"
                 data-mdb-toggle="modal"
+                data-aos="zoom-out"
+                data-aos-once="true"
+                data-aos-delay="100"
               >
                 <i className="far fa-play-circle fa-3x"></i>
               </button>
-              <WatchModal></WatchModal>
             </div>
           </div>
         </div>
@@ -247,6 +249,9 @@ export function RewardBnb() {
           <div className="left_box col-md-6 col-lg-5 col-xl-5 text-center">
             <img
               className="w-100"
+              data-aos-once="true"
+              data-aos="zoom-in"
+              data-aos-delay="100"
               src={require("../../assets/images/about1.svg").default}
               alt="img"
             />
@@ -255,16 +260,31 @@ export function RewardBnb() {
           <div className="right_box col-md-6 col-lg-7 col-xl-7">
             <div className="px-3 px-md-5">
               <DesignSectionDot></DesignSectionDot>
-              <h3 className="py-3">
+              <h3
+                className="py-3"
+                data-aos-once="true"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 HOLD DreamCoin and get rewarded in BNB on every 7 days!
               </h3>
               <div className="content py-4">
-                <p className="mb-3">
+                <p
+                  className="mb-3"
+                  data-aos-once="true"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   DreamCoin is completely decentralized and all decisions are
                   made by a community poll. Which gives our developers a better
                   idea of how to move forward with DreamCoin. investors.
                 </p>
-                <p className="mb-3">
+                <p
+                  className="mb-3"
+                  data-aos-once="true"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
                   The DreamCoin developer team has no team tokens. In other
                   words, our team has to participate in the DreamCoin presale
                   along with other

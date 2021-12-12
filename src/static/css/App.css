@@ -178,7 +178,7 @@
   border-radius: 50%;
 }
 
-.watch_box_wrapper #watchModalView .modal-body {
+#watchModalView .modal-body {
   height: 40rem;
 }
 

@@ -44,8 +44,8 @@ function App() {
 
         {/* Aside fix item */}
         <LeftSideNavbar></LeftSideNavbar>
+        <WatchModal></WatchModal>
       </BrowserRouter>
-      <WatchModal></WatchModal>
     </div>
   );
 }
