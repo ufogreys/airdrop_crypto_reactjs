@@ -1,7 +1,8 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import Logo from '../assets/images/image01.png'
-import {Link} from 'react-router-dom'
 function Navbar(props) {
+    
     let navLinks = [
         {
             id: 1,
@@ -50,10 +51,12 @@ function Navbar(props) {
             link: '/feature'
         }
     ]
+    let getPath = useLocation().pathname
+    console.log(getPath)
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
             {/* <!-- Container wrapper --> */}
-            <div className="container">
+            <div className="container-xxl">
                 {/* <!-- Navbar brand --> */}
                 <a className="navbar-brand me-2" href="https://mdbgo.com/">
                     <img
@@ -86,7 +89,8 @@ function Navbar(props) {
 
                     <div className="d-flex align-items-center mobile_design_navbar">
                         {navLinks.map(v => {
-                            return <Link to={v.link} data-aos-once="true" data-aos="fade-right" data-aos-delay={v.id * 50} data-aos-offset="0" key={v.id} className="btn btn-muted me-1 shadow-0 text-white">{v.name} </Link>
+                            console.log(getPath == v.name.toLowerCase())
+                            return <Link to={v.link} data-aos-once="true" data-aos="fade-right" data-aos-delay={v.id * 50} data-aos-offset="0" key={v.id} className={`btn  ${getPath == v.link.toLowerCase()? 'btn-secondary': 'btn-muted' } me-1 shadow-0 text-white`}>{v.name} </Link>
                         })}
                         <button type="button" data-aos-once="true" data-aos="fade-left" data-aos-delay="350" className="btn btn-outline-secondary px-5 mt-3 mt-lg-0 rounded-pill">
                             Connect

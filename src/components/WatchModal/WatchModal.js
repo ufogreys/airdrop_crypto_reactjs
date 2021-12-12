@@ -3,7 +3,7 @@ import React from "react";
 function WatchModal(props) {
   return (
     <div
-      className="modal fade show"
+      className="modal fade "
       id="watchModalView"
       data-backdrop="static"
       data-keyboard="false"
