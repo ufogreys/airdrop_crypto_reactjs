@@ -25,12 +25,12 @@ function Navbar(props) {
         {
             id: 5,
             name: 'Reward BNB',
-            link: '#'
+            link: '#AboutComponent'
         },
         {
             id: 6,
             name: 'Presale',
-            link: '#AboutComponent'
+            link: '#IcoDistribution'
         },
         {
             id: 7,
