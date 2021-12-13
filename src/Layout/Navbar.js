@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from '../assets/images/image01.png'
 function Navbar(props) {
@@ -48,6 +48,14 @@ function Navbar(props) {
     ]
     let getPath = useLocation().pathname
     console.log(getPath)
+    let collapse = useRef()
+    function closeToggler(){
+        let lg = window.matchMedia("(max-width: 992px)")
+        if(lg.matches){
+            collapse.current.removeClass('show')
+        }
+    }
+    //console.log(collapse.current)
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
             {/* <!-- Container wrapper --> */}
@@ -76,7 +84,7 @@ function Navbar(props) {
                 </button>
 
                 {/* <!-- Collapsible wrapper --> */}
-                <div className="collapse navbar-collapse" id="navbarButtonsExample">
+                <div ref={collapse} className="collapse navbar-collapse" id="navbarButtonsExample">
                     {/* <!-- Left links --> */}
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     </ul>
@@ -85,7 +93,7 @@ function Navbar(props) {
                     <div className="d-flex align-items-center mobile_design_navbar">
                         {navLinks.map(v => {
                             console.log(getPath == v.name.toLowerCase())
-                            return <Link to={v.link} data-aos-once="true" data-aos="fade-right" data-aos-delay={v.id * 50} data-aos-offset="0" key={v.id} className={`btn  ${getPath == v.link.toLowerCase()? 'btn-secondary': 'btn-muted' } me-1 shadow-0 text-white`}>{v.name} </Link>
+                            return <Link onClick={()=> closeToggler()} to={v.link} data-aos-once="true" data-aos="fade-right" data-aos-delay={v.id * 50} data-aos-offset="0" key={v.id} className={`btn  ${getPath == v.link.toLowerCase()? 'btn-secondary': 'btn-muted' } me-1 shadow-0 text-white`}>{v.name} </Link>
                         })}
                         <button type="button" data-aos-once="true" data-aos="fade-left" data-aos-delay="350" className="btn btn-outline-secondary px-5 mt-3 mt-lg-0 rounded-pill">
                             Connect
