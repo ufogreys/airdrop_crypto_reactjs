@@ -1,6 +1,7 @@
 import React from "react";
 import Airdrop_img from "../../assets/images/airdrop_img.png";
 import { About } from "../About/About";
+import {ContactUs} from "../ContactUs/ContactUs";
 function Home(props) {
   return (
     <>
@@ -58,6 +59,7 @@ function Home(props) {
         </div>
       </section>
       <About></About>
+      <ContactUs></ContactUs>
     </>
   );
 }

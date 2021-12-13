@@ -1,6 +1,6 @@
 import React from "react";
 import DesignSectionDot from "../DesignSectionDot/DesignSectionDot";
-function ContactUs(props) {
+export function ContactUs(props) {
   return (
     <div id="ContactUs">
       <div className="container-xxl py-5">

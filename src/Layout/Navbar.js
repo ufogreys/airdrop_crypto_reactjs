@@ -20,28 +20,28 @@ function Navbar(props) {
             name: 'Whitepaper',
             link: '/whitepaper'
         },
+        // {
+        //     id: 4,
+        //     name: 'Contact',
+        //     link: '/contact_us'
+        // },
         {
             id: 4,
-            name: 'Contact',
-            link: '/contact_us'
-        },
-        {
-            id: 5,
             name: 'Reward BNB',
             link: '/reward_bnb'
         },
         {
-            id: 6,
+            id: 5,
             name: 'Presale',
             link: '/presale'
         },
         {
-            id: 7,
+            id: 6,
             name: 'Airdrop',
             link: '/airdrop'
         },
         {
-            id: 8,
+            id: 7,
             name: 'Feature',
             link: '/feature'
         }
