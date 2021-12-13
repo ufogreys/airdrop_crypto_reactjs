@@ -1,8 +1,8 @@
-import React, {useRef} from "react";
+import React, { useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from '../assets/images/image01.png'
 function Navbar(props) {
-    
+
     let navLinks = [
         {
             id: 1,
@@ -14,7 +14,7 @@ function Navbar(props) {
             name: 'Roadmap',
             link: '/roadmap'
         },
-        
+
         {
             id: 3,
             name: 'Whitepaper',
@@ -49,15 +49,13 @@ function Navbar(props) {
     let getPath = useLocation().pathname
     console.log(getPath)
     let collapse = useRef()
-    function closeToggler(){
-        let lg = window.matchMedia("(max-width: 992px)")
-        if(lg.matches){
-            collapse.current.removeClass('show')
-        }
+    let [navShow, setNavShow] = useState(false)
+    function navbarToggler() {
+        setNavShow(!navShow)
     }
     //console.log(collapse.current)
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark " id="nav">
             {/* <!-- Container wrapper --> */}
             <div className="container-xxl">
                 {/* <!-- Navbar brand --> */}
@@ -74,26 +72,24 @@ function Navbar(props) {
                 <button
                     className="navbar-toggler"
                     type="button"
-                    data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarButtonsExample"
+                    onClick={() => navbarToggler()}
                     aria-controls="navbarButtonsExample"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <i className="fas fa-bars fa-2x"></i>
+                    {navShow ? <i className="fa fa-times fa-2x" aria-hidden="true"></i> : <i className="fas fa-bars fa-2x"></i>}
                 </button>
 
                 {/* <!-- Collapsible wrapper --> */}
-                <div ref={collapse} className="collapse navbar-collapse" id="navbarButtonsExample">
+                <div ref={collapse} className={`collapse navbar-collapse ${navShow ? 'show' : ''}`} id="navbarButtonsExample">
                     {/* <!-- Left links --> */}
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     </ul>
                     {/* <!-- Left links --> */}
-
                     <div className="d-flex align-items-center mobile_design_navbar">
                         {navLinks.map(v => {
-                            console.log(getPath == v.name.toLowerCase())
-                            return <Link onClick={()=> closeToggler()} to={v.link} data-aos-once="true" data-aos="fade-right" data-aos-delay={v.id * 50} data-aos-offset="0" key={v.id} className={`btn  ${getPath == v.link.toLowerCase()? 'btn-secondary': 'btn-muted' } me-1 shadow-0 text-white`}>{v.name} </Link>
+                            // console.log(getPath == v.name.toLowerCase())
+                            return <Link onClick={() => setNavShow(false)} to={v.link} data-aos-once="true" data-aos="fade-right" data-aos-delay={v.id * 50} data-aos-offset="0" key={v.id} className={`btn  ${getPath == v.link.toLowerCase() ? 'btn-secondary' : 'btn-muted'} me-1 shadow-0 text-white`}>{v.name} </Link>
                         })}
                         <button type="button" data-aos-once="true" data-aos="fade-left" data-aos-delay="350" className="btn btn-outline-secondary px-5 mt-3 mt-lg-0 rounded-pill">
                             Connect
