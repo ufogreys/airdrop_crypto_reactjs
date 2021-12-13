@@ -396,8 +396,12 @@ $cyan: #00e4ff;
           color: white;
           padding: 1rem 1.5rem;
           border-radius: 1rem;
+         text-align: left;
           li {
             display: flex;
+            p{
+              margin-bottom: .3rem;
+            }
             i {
               font-size: 1.6rem;
               display: inline-block;
@@ -476,6 +480,9 @@ $cyan: #00e4ff;
           border-radius: 1rem;
           li {
             display: flex;
+            p{
+              margin-bottom: .3rem;
+            }
             i {
               font-size: 1.6rem;
               display: inline-block;

@@ -469,12 +469,17 @@
   color: white;
   padding: 1rem 1.5rem;
   border-radius: 1rem;
+  text-align: left;
 }
 
 #RoadMap #roadMap_mobile_line .line_content_wrapper_left .line_content ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#RoadMap #roadMap_mobile_line .line_content_wrapper_left .line_content ul li p {
+  margin-bottom: .3rem;
 }
 
 #RoadMap #roadMap_mobile_line .line_content_wrapper_left .line_content ul li i {
@@ -569,6 +574,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#RoadMap #roadMap_mobile_line .line_content_wrapper_right .line_content ul li p {
+  margin-bottom: .3rem;
 }
 
 #RoadMap #roadMap_mobile_line .line_content_wrapper_right .line_content ul li i {
