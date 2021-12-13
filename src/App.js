@@ -1,7 +1,7 @@
 import "./static/css/App.css";
 import Base from "./Layout/Base";
 import Home from "./components/Home/Home";
-import About from "./components/About/About";
+import {About} from "./components/About/About";
 import Services from "./components/Services/Services";
 import RoadMap from "./components/RoadMap/RoadMap";
 import LeftSideNavbar from "./components/LeftSideNavbar/LeftSideNavbar";
@@ -33,7 +33,7 @@ function App() {
             <Route path="/" element={<Home></Home>} />
             <Route path="/contact_us" element={<ContactUs />} />
             <Route path="/roadmap" element={<RoadMap />} />
-            <Route path="/about" element={<About />} />
+            {/* <Route path="/about" element={<About />} /> */}
             <Route path="/feature" element={<Features />} />
             <Route path="/whitepaper" element={<Services />} />
             <Route path="/airdrop" element={<IcoUpdate />} />

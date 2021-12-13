@@ -42,11 +42,6 @@ function Navbar(props) {
         },
         {
             id: 8,
-            name: 'About Us',
-            link: '/about'
-        },
-        {
-            id: 9,
             name: 'Feature',
             link: '/feature'
         }

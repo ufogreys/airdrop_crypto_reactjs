@@ -1,7 +1,8 @@
 import React from "react";
 import WatchModal from "../WatchModal/WatchModal";
 import DesignSectionDot from "../DesignSectionDot/DesignSectionDot";
-function About(props) {
+import FAQ from "../FAQ/FAQ";
+export function About(props) {
   const trusted_card_obj = [
     {
       id: 1,
@@ -195,49 +196,50 @@ function About(props) {
   );
 }
 
-export default About;
-
 export function Features() {
   return (
-    <div id="Features">
-      <div className="container-xxl py-5">
-        <div className="row mb-5 pb-5 justify-content-center">
-          <div className="col-10 col-md-8 col-lg-6 text-center">
-            <DesignSectionDot></DesignSectionDot>
-            <h3
-              className="py-3"
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-delay="100"
-            >
-              Watch Our Demo Video
-            </h3>
-
-            <p data-aos="fade-up" data-aos-once="true" data-aos-delay="500">
-              The Dream Protocol is a community driven, fair launched DeFi
-              Token. Three simple functions occur during each trade: Reflection,
-              LP Acquisition, & Burn.
-            </p>
-          </div>
-          <div className="col-12 py-5"></div>
-
-          <div className="col-11 col-sm-10 col-md-8 col-lg-6">
-            <div className="watch_box_wrapper rounded-5">
-              <button
-                className="btn btn-secondary"
-                data-mdb-target="#watchModalView"
-                data-mdb-toggle="modal"
-                data-aos="zoom-out"
+    <>
+      <div id="Features">
+        <div className="container-xxl py-5">
+          <div className="row mb-5 pb-5 justify-content-center">
+            <div className="col-10 col-md-8 col-lg-6 text-center">
+              <DesignSectionDot></DesignSectionDot>
+              <h3
+                className="py-3"
+                data-aos="fade-up"
                 data-aos-once="true"
                 data-aos-delay="100"
               >
-                <i className="far fa-play-circle fa-3x"></i>
-              </button>
+                Feature
+              </h3>
+
+              <p data-aos="fade-up" data-aos-once="true" data-aos-delay="500">
+                The Dream Protocol is a community driven, fair launched DeFi
+                Token. Three simple functions occur during each trade:
+                Reflection, LP Acquisition, & Burn.
+              </p>
+            </div>
+            <div className="col-12 py-5"></div>
+
+            <div className="col-11 col-sm-10 col-md-8 col-lg-6">
+              <div className="watch_box_wrapper rounded-5">
+                <button
+                  className="btn btn-secondary"
+                  data-mdb-target="#watchModalView"
+                  data-mdb-toggle="modal"
+                  data-aos="zoom-out"
+                  data-aos-once="true"
+                  data-aos-delay="100"
+                >
+                  <i className="far fa-play-circle fa-3x"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <FAQ></FAQ>
+    </>
   );
 }
 

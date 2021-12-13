@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Countdown from "react-countdown";
 import DesignSectionDot from "../DesignSectionDot/DesignSectionDot";
-function FAQ(props) {
+export function FAQ(props) {
   return (
-    <div id="frequently_ask_question" className="pb-5">
+    <div id="frequently_ask_question" className="py-5">
       <div className="container-xxl">
         <div className="row">
           <div className="col-md-6 col-lg-7">
